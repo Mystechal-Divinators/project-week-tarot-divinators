@@ -9,9 +9,10 @@ our raw majorArcana data model
 const card = {
     name: 'title',
     id: 'placeholder',
-    interpretation: 'interpretation'
+    interpretation: 'interpretation',
 };
-
+console.log(card);
+console.log(card);
 
 /*
 renderCard function runs on page load
