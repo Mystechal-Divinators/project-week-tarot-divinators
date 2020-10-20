@@ -27,7 +27,7 @@ export function renderCard(card) {
     img.src = 'http://www.placekitten.com/200/300';
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
-    // keywords.textContent = card.keywords;
+    keywords.textContent = card.keyWords;
     
     container.append(img, title, interpretation, keywords);
     anchor.append(container);
