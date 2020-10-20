@@ -16,7 +16,7 @@ const anchor = document.querySelector('section');
 export function renderCard(card) {
     const container = document.createElement('div');
     const img = document.createElement('img');
-    const title = document.createElement('div');
+    const title = document.createElement('p');
     const interpretation = document.createElement('div');
 
     container.classList.add('card');
@@ -25,6 +25,6 @@ export function renderCard(card) {
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
     
-    container.append(img, title);
+    container.append(img, title, interpretation);
     anchor.append(container);
 }
