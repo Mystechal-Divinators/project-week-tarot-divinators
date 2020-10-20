@@ -20,6 +20,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    margin-top: var(--gutter);
 }
 
 section {
