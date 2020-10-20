@@ -1,12 +1,14 @@
 import { renderCard } from '../utils/renderCard.js';
 
 const card = {
-    name: 'placeholder',
+    name: 'title',
     id: 'placeholder',
-    interpretation: 'placeholder'
+    interpretation: 'interpretation'
 };
 
 
 // renderCard function runs on page load
 // placeholder images for now
+renderCard(card);
+renderCard(card);
 renderCard(card);
