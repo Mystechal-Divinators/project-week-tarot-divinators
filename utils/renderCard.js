@@ -20,13 +20,15 @@ export function renderCard(card) {
     const img = document.createElement('img');
     const title = document.createElement('p');
     const interpretation = document.createElement('div');
+    const keywords = document.createElement('div');
 
     container.classList.add('card');
     // img.src = `${card.id}.png`;
-    img.src = "https://placekitten.com/200/300";
+    img.src = 'http://www.placekitten.com/200/300';
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
+    keywords.textContent = card.keyWords;
     
-    container.append(img, title, interpretation);
+    container.append(img, title, interpretation, keywords);
     anchor.append(container);
 }
