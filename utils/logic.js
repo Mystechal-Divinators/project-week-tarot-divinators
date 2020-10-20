@@ -1,4 +1,4 @@
-import { majorArcana } from '..card-data.js';
+import { majorArcana } from '../card-data.js';
 
 /* 
 getRandomCard takes in our data model (array) and returns
@@ -20,7 +20,7 @@ function isRepeat(obj, arr) {
 nCards takes in a number and returns an array of that many (non-duplicating) 
 cards needs to be fed with the raw card data array
 */
-function nCards(n) {
+export function nCards(n) {
     let arr = [];
     while (n > 0) {
         const nextCard = getRandomCard(majorArcana);
