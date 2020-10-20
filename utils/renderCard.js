@@ -1,7 +1,9 @@
 const anchor = document.querySelector('section');
 
-// renderCard function takes a card object, and generates an HTML card with:
-// a title (name), image, and an interpretation appended in a div below it
+/*
+renderCard function takes a card object, and generates an HTML card with:
+a title (name), image, and an interpretation appended in a div below it
+*/
 
 /*
 <div class="card"> 
