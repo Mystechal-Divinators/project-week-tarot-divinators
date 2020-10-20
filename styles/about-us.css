@@ -1,0 +1,38 @@
+header {
+    background-color: gray;
+   
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+img {
+    width: 20%;
+}
+
+div {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main {
+    background-color: black;
+}
+
+section {
+    border: white none;
+}
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+
+}
