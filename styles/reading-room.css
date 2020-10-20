@@ -1,0 +1,33 @@
+.card {
+    height: 300px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.card > img {
+    border-radius: 12px;
+}
+
+.card > p {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+.card > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
