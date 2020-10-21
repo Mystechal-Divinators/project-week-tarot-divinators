@@ -165,8 +165,8 @@ export const majorArcana = [
         category: 'major-arcana',
     }, 
     {
-        id: 'judgment',
-        name: 'Judgment',
+        id: 'judgement',
+        name: 'Judgement',
         image:'./assets/major-arcana/judgment.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
