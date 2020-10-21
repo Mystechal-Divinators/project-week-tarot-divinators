@@ -11,6 +11,7 @@ header {
     font-size: 300%;
     font-weight: 600;
     padding-top: 2%;
+    padding-bottom: 2.75%;
     text-decoration: underline;   
 }
 
@@ -40,9 +41,16 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
-    display: flex;
-    justify-content: flex-start;
+    font-family: hill house;
+    padding-top: 12%;
+    border-style: hidden ;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+    float: left;
+    margin: 3px;
 }
+
 
 .card {
     position: relative;
