@@ -11,7 +11,6 @@ header {
     font-size: 350%;
     font-weight: 600;
     padding-top: 2%;
-    padding-bottom: 2.75%;
     text-decoration: underline; 
 
 }
@@ -22,7 +21,12 @@ body {
     color: white;  
 }
 
-
+#buttonDiv {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
 
 main {
     color: white;
@@ -41,13 +45,12 @@ button {
     transition: all .5s ease-in-out;
     color: white;
     font-family: hill house;
-    padding-top: 12%;
     border-style: hidden ;
     padding: 10px;
     border-radius: 5px;
     width: max-content;
     float: left;
-    margin: 3px;
+    margin: 5px;
 }
 
 
