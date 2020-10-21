@@ -4,17 +4,17 @@
 }
 
 
-
 header {
-    background-color: gray;
-   
+    font-family: Hill House;
+    color: black;
+    background-color: white;
 }
+
 
 body {
     background-color: black;
     color: white;
     font-family: Hill House;
-
 }
 
 img {
@@ -31,6 +31,8 @@ div {
 
 main {
     background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 section {
@@ -42,3 +44,24 @@ footer {
     background-color: rgb(0, 0, 0);
 
 }
+
+
+button:hover {
+    background: #c7c1c6;
+    color: #ffffff;
+}
+
+button {
+    background: #000000;
+    transition: all .5s ease-in-out;
+    color: white;
+    width: max-content;
+
+}
+
+
+#text {
+    width: 100%;
+    text-align: center;
+}
+
