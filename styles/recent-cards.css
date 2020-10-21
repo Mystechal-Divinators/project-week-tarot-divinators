@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Hill House;
+        src:url('../assets/font/Hill_House\ 2.otf')
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+.card > img {
+    border-radius: 12px;
+    height: 420px;
+    width: 240px;
+}
+
+.card > p {
+    position: absolute;
+    font-family: Hill House;
+    background-color: #040707;
+    width: 140px;
+    height: 30px;
+    bottom: 16%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
