@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Hill House;
+        src:url('../assets/font/Hill_House\ 2.otf')
+}
+
+
+
 header {
     background-color: gray;
    
@@ -6,6 +13,7 @@ header {
 body {
     background-color: black;
     color: white;
+    font-family: Hill House;
 
 }
 
