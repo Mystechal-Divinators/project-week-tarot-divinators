@@ -21,7 +21,7 @@ body {
     color: white;  
 }
 
-div {
+#buttonDiv {
     border: solid gray none;
     margin: 5px;
     display: flex;
