@@ -21,7 +21,7 @@ export const majorArcana = [
         category: 'major-arcana',
     },  
     {
-        id: 'highPriestess',
+        id: 'highpriestess',
         name: 'The High Priestess',
         image:'./assets/major-arcana/highpriestess.png',
         keyWords: 'text text text',
@@ -85,7 +85,7 @@ export const majorArcana = [
         category: 'major-arcana',
     }, 
     {
-        id: 'wheel',
+        id: 'wheeloffortune',
         name: 'The Wheel of Fortune',
         image:'./assets/major-arcana/wheeloffortune.png',
         keyWords: 'text text text',
@@ -101,7 +101,7 @@ export const majorArcana = [
         category: 'major-arcana',
     }, 
     {
-        id: 'hangedMan',
+        id: 'hangedman',
         name: 'The Hanged Man',
         image:'./assets/major-arcana/hangedman.png',
         keyWords: 'text text text',
@@ -167,7 +167,7 @@ export const majorArcana = [
     {
         id: 'judgment',
         name: 'Judgment',
-        image:'./assets/major-arcana/judgement.png',
+        image:'./assets/major-arcana/judgment.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -200,7 +200,7 @@ export const majorArcana2 = [
         category: 'major-arcana',
     }, 
     {
-        id: 'highPriestess2',
+        id: 'highpriestess2',
         name: 'The High Priestess',
         //image: url('...'),
         keyWords: 'text text text',
@@ -280,7 +280,7 @@ export const majorArcana2 = [
         category: 'major-arcana',
     }, 
     {
-        id: 'hangedMan2',
+        id: 'hangedman2',
         name: 'The Hanged Man',
         //image: url('...'),
         keyWords: 'text text text',
@@ -379,7 +379,7 @@ export const majorArcana3 = [
         category: 'major-arcana',
     }, 
     {
-        id: 'highPriestess3',
+        id: 'highpriestess3',
         name: 'The High Priestess',
         //image: url('...'),
         keyWords: 'text text text',
@@ -459,7 +459,7 @@ export const majorArcana3 = [
         category: 'major-arcana',
     }, 
     {
-        id: 'hangedMan3',
+        id: 'hangedman3',
         name: 'The Hanged Man',
         //image: url('...'),
         keyWords: 'text text text',
