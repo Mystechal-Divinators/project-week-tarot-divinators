@@ -6,9 +6,9 @@ export const majorArcana = [
         id: 'fool',
         name: 'The Fool',
         //image: url('...'),
-        keyWords: 'Key Words: openness, trust; ready to take a risk; courage to stand your ground; document.write('<br>') freedom, independence; creativity; ',
+        keyWords: 'Key Words: openness, trust; ready to take a risk; courage to stand your ground; \n freedom, independence; creativity; ',
         interpretation: 'Key Words',
-            .split('\n'),
+            
         category: 'major-arcana',
     }, 
     {
