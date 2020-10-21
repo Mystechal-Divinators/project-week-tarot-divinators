@@ -21,10 +21,28 @@ header {
 
 h2 {
     font-family: hill house;
+    margin: 40px;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+}
+
+a:link {
+    color: #e4a77b;
+}
+a:hover {
+    color: #e2d5cc;;
+}
+
+a:visited {
+    color: bisque;
 }
 
 body {
-    font-family: 'PT Sans Narrow', sans-serif;
     background-color: black;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
