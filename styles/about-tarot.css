@@ -72,8 +72,6 @@ section {
     border: white none;
 }
 
-
-
 button:hover {
     background:#e4a77b;
     color: #ffffff;
@@ -86,7 +84,6 @@ button {
     width: max-content;
     float: right;
     font-family: Hill House;
-    padding-top: 12%;
     border-style: hidden ;
     margin: 5px;
     padding: 10px;

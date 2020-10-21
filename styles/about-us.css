@@ -24,6 +24,22 @@ body {
     font-size: small;
 }
 
+h3 {
+    font-family: Hill House;
+}
+
+span {
+    width: 75%;
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 13px;
+}
+
+
 img {
     width: 25%; 
 }
@@ -58,12 +74,21 @@ button:hover {
     color: #ffffff;
 }
 
+#buttonDiv {
+    float: right;
+}
+
 button {
+    font-family: Hill House;
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
     width: max-content;
-    float: right;
+    float: left;
+    border-style: hidden ;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
