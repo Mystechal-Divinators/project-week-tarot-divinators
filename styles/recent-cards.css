@@ -51,41 +51,6 @@ button {
     margin: 3px;
 }
 
-
-.card {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 5px;
-}
-
-.card > img {
-    border-radius: 30px;
-    height: 420px;
-    width: 240px;
-}
-
-.card > p {
-    position: absolute;
-    font-family: Hill House;
-    background-color: #040707;
-    width: 140px;
-    height: 30px;
-    bottom: 10%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
-
-.card > div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +58,7 @@ button {
     align-items: center;
     justify-content: space-around;
 }
+<<<<<<< HEAD
 
 
 
@@ -137,3 +103,5 @@ p {
     visibility: visible;
 }
 */
+=======
+>>>>>>> 789dc2f147ff51fea1e478799cd1bc49fda197da

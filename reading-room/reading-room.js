@@ -10,19 +10,48 @@ const currentDate = timestampMaker();
 
 console.log(currentDate);
 
-// go back to renderCard and update img src when added to data model
-randomCard.forEach(card => {
-    renderCard(card);
-});
 
-let localStorageCards = getLocalStorage(CARDS) || [];
+function clickHandler() {
+    const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
+    const randomCard = nCards(spreadSelection);
 
+<<<<<<< HEAD
 for (let i = 0; i < randomCard.length; i++) {
     const oneCard = randomCard[i];
 
     oneCard.timestamp = currentDate;
 
 console.log(oneCard);
+=======
+    randomCard.forEach(card => {
+        renderCard(card);
+    });
+
+    // const generatedCards = document.getElementsByClassName('card');
+
+    // generatedCards[0].classList.add('animation-one');
+    // generatedCards[1].classList.add('animation-two');
+    // generatedCards[2].classList.add('animation-three');
+    
+    let localStorageCards = getLocalStorage(CARDS) || [];
+    
+    for (let i = 0; i < randomCard.length; i++) {
+        const oneCard = randomCard[i];
+        localStorageCards.push(oneCard);
+    }
+    
+    setLocalStorage(CARDS, localStorageCards);
+}
+
+const onClick = () => {
+    clickHandler();
+    deck.removeEventListener('click', onClick);
+};
+
+const deck = document.querySelector('img');
+
+deck.addEventListener('click', onClick);
+>>>>>>> 789dc2f147ff51fea1e478799cd1bc49fda197da
 
     localStorageCards.push(oneCard);
 }

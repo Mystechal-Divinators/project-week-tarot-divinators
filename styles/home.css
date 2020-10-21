@@ -1,19 +1,18 @@
 
 header {
     font-family: Hill House;
-    color: black;
-    background-color: rgb(209, 205, 205);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-size: 350%;
     font-weight: 600;
     padding-top: 2%;
     text-decoration: underline;
-    
 }
 
 
 body {
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
@@ -31,12 +30,18 @@ div {
     border: solid gray none;
     margin: 5px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 
 main {
-    background-color: black;
+    background-color: rgb(17, 17, 17);
+    background-image: url();
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -44,6 +49,7 @@ main {
 section {
     border: white none;
 }
+
 
 
 footer {
@@ -101,3 +107,4 @@ input[type=radio]:checked + div > p {
     border-radius: 4px;
     margin: 2px;
 }
+
