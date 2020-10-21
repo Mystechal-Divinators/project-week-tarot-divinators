@@ -94,7 +94,7 @@ button {
     justify-content: space-around;
     overflow: hidden;
 }
-/* 
+
 .animation-one {
     animation-duration: 3s;
     animation-name: cardone;
@@ -128,4 +128,4 @@ button {
     from {
         margin-left: 100%;
     }
-} */
+}
