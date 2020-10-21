@@ -3,7 +3,6 @@
         src:url('../assets/font/Hill_House\ 2.otf')
 }
 
-
 header {
     font-family: Hill House;
     color: black;
@@ -12,33 +11,25 @@ header {
     font-size: 300%;
     font-weight: 600;
     padding-top: 2%;
-    text-decoration: underline;
-    
+    text-decoration: underline;   
 }
-
 
 body {
     background-color: black;
-    color: white;
-    
-    
+    color: white;   
 }
-
-img {
-    width: 10%; 
-}
-
 
 main {
     background-color: black;
     margin-top: 2%;
-
 }
 
 section {
     border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
 
 button:hover {
     background:#e4a77b;
@@ -51,7 +42,8 @@ button {
     color: white;
     display: flex;
     justify-content: flex-start;
-=======
+}
+
 .card {
     position: relative;
     text-align: center;
@@ -60,7 +52,7 @@ button {
 }
 
 .card > img {
-    border-radius: 12px;
+    border-radius: 30px;
     height: 420px;
     width: 240px;
 }
@@ -71,7 +63,7 @@ button {
     background-color: #040707;
     width: 140px;
     height: 30px;
-    bottom: 16%;
+    bottom: 10%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +76,6 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: black;
 }
 
 .main-section {
