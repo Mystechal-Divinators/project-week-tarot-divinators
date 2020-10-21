@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Hill House;
+        src:url('../assets/font/Hill_House\ 2.otf')
+}
+
+
+header {
+    font-family: Hill House;
+    color: black;
+    background-color: rgb(209, 205, 205);
+    text-align: center;
+    font-size: 350%;
+    font-weight: 600;
+    padding-top: 2%;
+    text-decoration: underline;
+    
+}
+
+
+body {
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+
+    
+    
+}
+
+img {
+    width: 25%; 
+}
+
+div {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+main {
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section {
+    border: white none;
+}
+
+
+
+button:hover {
+    background:#e4a77b;
+    color: #ffffff;
+}
+
+button {
+    background: #000000;
+    transition: all .5s ease-in-out;
+    color: white;
+    width: max-content;
+    float: right;
+    font-family: Hill House;
+    padding-top: 12%;
+}
+
+
