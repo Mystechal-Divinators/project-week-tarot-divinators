@@ -6,21 +6,39 @@ import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
 const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
 const randomCard = nCards(spreadSelection);
 
-// go back to renderCard and update img src when added to data model
-randomCard.forEach(card => {
-    renderCard(card);
-});
 
-let localStorageCards = getLocalStorage(CARDS) || [];
+function clickHandler() {
+    const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
+    const randomCard = nCards(spreadSelection);
 
-for (let i = 0; i < randomCard.length; i++) {
-    const oneCard = randomCard[i];
-    localStorageCards.push(oneCard);
+    randomCard.forEach(card => {
+        renderCard(card);
+    });
+
+    // const generatedCards = document.getElementsByClassName('card');
+
+    // generatedCards[0].classList.add('animation-one');
+    // generatedCards[1].classList.add('animation-two');
+    // generatedCards[2].classList.add('animation-three');
     
+    let localStorageCards = getLocalStorage(CARDS) || [];
+    
+    for (let i = 0; i < randomCard.length; i++) {
+        const oneCard = randomCard[i];
+        localStorageCards.push(oneCard);
+    }
+    
+    setLocalStorage(CARDS, localStorageCards);
 }
 
-setLocalStorage(CARDS, localStorageCards);
+const onClick = () => {
+    clickHandler();
+    deck.removeEventListener('click', onClick);
+};
 
+const deck = document.querySelector('img');
+
+deck.addEventListener('click', onClick);
 
 //Get timestamp
 const timeStamp = new Date();

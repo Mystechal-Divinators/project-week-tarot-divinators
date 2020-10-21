@@ -12,42 +12,38 @@ header {
     font-weight: 600;
     padding-top: 2%;
     text-decoration: underline; 
-
 }
-
 
 body {
     background-color: black;
     color: white;  
 }
 
-#homeButtonDiv {
+.homeButtonDiv {
     border: solid gray none;
     margin: 5px;
     display: flex;
     align-items: center;
 }
-#clear-button-div {
+
+.clear-button-div {
     border: solid gray none;
     margin: 5px;
     display: flex;
     align-items: center; 
 } 
 
-#buttonSpan {
+.buttonSpan {
     border: solid gray none;
     margin: 5px;
     display: flex;
     align-items: center;
 }
 
-
 main {
     color: white;
     margin-top: 7%;
 }
-
-
 
 button:hover {
     background:#e4a77b;
@@ -67,51 +63,6 @@ button {
     margin: 5px;
 }
 
-
-
-.card {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin: 5px;
-}
-
-
-.card > img:hover {
-    border: 5px #e4a77b solid;
-}
-
-
-.card > img {
-    border-radius: 12px;
-    height: 420px;
-    width: 240px;
-}
-
-.card > p {
-    position: absolute;
-    font-family: Hill House;
-    /* this background color DOESN'T WORK for Judgment and The World, which have a background color of #080a09 */
-    background-color: #040707;
-    width: 140px;
-    height: 30px;
-    bottom: 14%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    left: 0;
-    right: 0;
-}
-
-.card > div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: black;
-}
-
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -119,4 +70,27 @@ button {
     align-items: center;
     justify-content: space-around;
     color: white;
+}
+
+.card-img {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card-img:hover {
+    border: 1px peachpuff solid;
+}
+
+.card > img, .card-img {
+    border-radius: 12px;
+    height: 420px;
+    width: 240px;
 }

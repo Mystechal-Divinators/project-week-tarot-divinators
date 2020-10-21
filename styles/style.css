@@ -1,1 +1,36 @@
+.card {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
 
+.card > img {
+    border-radius: 30px;
+    height: 420px;
+    width: 240px;
+}
+
+.card > p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hill House;
+    background-color: #040707;
+    width: 140px;
+    height: 35px;
+    bottom: 13%;
+    line-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
