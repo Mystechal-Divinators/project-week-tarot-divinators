@@ -4,6 +4,9 @@
     font-family: Hill House;
         src:url('../assets/font/Hill_House\ 2.otf')
 }
+
+
+
 header {
     font-family: Hill House;
     color: black;
@@ -21,14 +24,12 @@ h2 {
 }
 
 body {
+    font-family: 'PT Sans Narrow', sans-serif;
     background-color: black;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    text-align: center;
-
-    
-    
+    text-align: center;    
 }
 
 img {
@@ -69,4 +70,5 @@ button {
     font-family: Hill House;
     padding-top: 12%;
 }
+
 
