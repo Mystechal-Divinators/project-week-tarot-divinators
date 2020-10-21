@@ -1,1 +1,62 @@
-/* add home page styles here */
+
+header {
+    font-family: Hill House;
+    color: black;
+    background-color: rgb(209, 205, 205);
+    text-align: center;
+    font-size: 350%;
+    font-weight: 600;
+    padding-top: 2%;
+    text-decoration: underline;
+    
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+    
+}
+
+img {
+    width: 25%; 
+}
+
+div {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+main {
+    background-color: black;
+}
+
+
+section {
+    border: white none;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+
+button:hover {
+    background:#e4a77b;
+    color: #ffffff;
+}
+
+button {
+    background: #000000;
+    transition: all .5s ease-in-out;
+    color: white;
+    width: max-content;
+    float: right;
+}
