@@ -64,12 +64,26 @@ button {
 label {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+
+label:hover {
+    transform: scale(1.2);
+}
+
+input {
+    opacity: 0;
+}
+
+input[type=radio]:checked + div > p {
+    background-color: yellow;
+    /* feel free to change this color */
 }
 
 .labels {
     display: flex;
-    
 }
 
 .little-card {
