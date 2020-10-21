@@ -71,3 +71,26 @@ button {
     justify-content: space-around;
     color: white;
 }
+
+.card-img {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card-img:hover {
+    border: 1px peachpuff solid;
+}
+
+.card > img, .card-img {
+    border-radius: 12px;
+    height: 420px;
+    width: 240px;
+}
