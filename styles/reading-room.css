@@ -3,6 +3,39 @@
         src:url('../assets/font/Hill_House\ 2.otf')
 }
 
+header {
+    font-family: Hill House;
+    color: black;
+    background-color: rgb(209, 205, 205);
+    text-align: center;
+    font-size: 350%;
+    font-weight: 600;
+    padding-top: 2%;
+    text-decoration: underline;
+    
+}
+
+
+body {
+    background-color: black;
+}
+
+button:hover {
+    background:#e4a77b;
+    color: #ffffff;
+}
+
+button {
+    background: #000000;
+    transition: all .5s ease-in-out;
+    color: white;
+    width: max-content;
+    float: left;
+    font-family: hill house;
+}
+
+
+
 .card {
     position: relative;
     text-align: center;
