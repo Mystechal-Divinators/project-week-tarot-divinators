@@ -19,7 +19,7 @@ body {
     color: white;  
 }
 
-.homeButtonDiv {
+#buttonDiv {
     border: solid gray none;
     margin: 5px;
     display: flex;
