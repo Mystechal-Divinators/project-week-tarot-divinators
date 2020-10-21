@@ -11,43 +11,12 @@ header {
     font-size: 350%;
     font-weight: 600;
     padding-top: 2%;
-    text-decoration: underline; 
-
+    text-decoration: underline;   
 }
-
 
 body {
     background-color: black;
-    color: white;  
 }
-
-#homeButtonDiv {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-}
-#clear-button-div {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center; 
-} 
-
-#buttonSpan {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
-main {
-    color: white;
-    margin-top: 7%;
-}
-
-
 
 button:hover {
     background:#e4a77b;
@@ -58,16 +27,23 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
-    font-family: hill house;
-    border-style: hidden ;
-    padding: 10px;
-    border-radius: 5px;
     width: max-content;
     float: left;
-    margin: 5px;
+    font-family: hill house;
 }
 
-
+.card-img {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
 
 .card {
     position: relative;
@@ -76,13 +52,11 @@ button {
     margin: 5px;
 }
 
-
-.card > img:hover {
-    border: 5px #e4a77b solid;
+.card-img:hover {
+    border: 1px peachpuff solid;
 }
 
-
-.card > img {
+.card > img, .card-img {
     border-radius: 12px;
     height: 420px;
     width: 240px;
@@ -118,5 +92,40 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: white;
+    overflow: hidden;
 }
+/* 
+.animation-one {
+    animation-duration: 3s;
+    animation-name: cardone;
+}
+
+@keyframes cardone {
+    from {
+        margin-left: 90%;
+    }
+}
+
+.animation-two {
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-name: cardtwo;
+}
+
+@keyframes cardtwo {
+    from {
+        margin-left: 95%;
+    }
+}
+
+.animation-three {
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-name: cardthree;
+}
+
+@keyframes cardthree {
+    from {
+        margin-left: 100%;
+    }
+} */
