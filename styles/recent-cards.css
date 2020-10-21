@@ -11,8 +11,14 @@ header {
     font-size: 300%;
     font-weight: 600;
     padding-top: 2%;
-    padding-bottom: 2.75%;
     text-decoration: underline;   
+}
+
+.homeButtonDiv {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -42,13 +48,13 @@ button {
     transition: all .5s ease-in-out;
     color: white;
     font-family: hill house;
-    padding-top: 12%;
+   
     border-style: hidden ;
     padding: 10px;
     border-radius: 5px;
     width: max-content;
     float: left;
-    margin: 3px;
+    margin: 5px;
 }
 
 .main-section {
