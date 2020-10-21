@@ -87,6 +87,10 @@ button {
     float: right;
     font-family: Hill House;
     padding-top: 12%;
+    border-style: hidden ;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
