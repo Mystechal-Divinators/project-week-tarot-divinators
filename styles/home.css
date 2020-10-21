@@ -60,3 +60,22 @@ button {
     width: max-content;
     float: right;
 }
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.labels {
+    display: flex;
+    
+}
+
+.little-card {
+    border: 1px solid white;
+    height: 32px;
+    width: 20px;
+    border-radius: 4px;
+    margin: 2px;
+}
