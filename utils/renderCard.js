@@ -23,8 +23,7 @@ export function renderCard(card) {
     const keywords = document.createElement('div');
 
     container.classList.add('card');
-    // img.src = `${card.id}.png`;
-    img.src = 'http://www.placekitten.com/200/300';
+    img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
