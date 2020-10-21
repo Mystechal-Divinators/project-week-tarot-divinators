@@ -10,7 +10,7 @@ function clickHandler() {
     randomCard.forEach(card => {
         renderCard(card);
     });
-
+    
     // const generatedCards = document.getElementsByClassName('card');
 
     // generatedCards[0].classList.add('animation-one');
