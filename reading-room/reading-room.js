@@ -20,7 +20,11 @@ for (let i = 0; i < randomCard.length; i++) {
 
 setLocalStorage(CARDS, localStorageCards);
 
+
 //Get timestamp
 const timeStamp = new Date();
-
 console.log(timeStamp);
+
+//Timestamp in milliseconds
+const timeStamp2 = Math.floor(Date.now() / 1000);
+console.log(timeStamp2);
