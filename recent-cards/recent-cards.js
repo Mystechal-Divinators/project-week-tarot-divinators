@@ -1,6 +1,6 @@
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
-import { renderCard } from '../utils/renderCard.js';
+//import { renderCard } from '../utils/renderCard.js';
 import { timestampMaker } from '../utils/timestamp.js';
 
 
@@ -14,6 +14,7 @@ console.log(currentDate);
 
 const anchor = document.querySelector('section');
 
+
 function renderRecentCard(card) {
     const container = document.createElement('div');
     const img = document.createElement('img');
@@ -21,13 +22,24 @@ function renderRecentCard(card) {
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
 
+
+    const date = document.createElement('div');
+console.log(date);
+    date.classList.add('time');
+    date.textContent = currentDate;
+
     container.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
 
-    container.append(img, title, interpretation, keywords);
+
+
+
+
+
+    container.append(img, title, interpretation, keywords, date);
     anchor.append(container);
 }
 //NEW STUFF END -Franco
@@ -77,3 +89,5 @@ clearButton.addEventListener('click', () => {
 
 //    interpretation.classList.add('hide');
 //    keywords.classList.add('cool');
+
+
