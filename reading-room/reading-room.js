@@ -19,3 +19,8 @@ for (let i = 0; i < randomCard.length; i++) {
 }
 
 setLocalStorage(CARDS, localStorageCards);
+
+//Get timestamp
+const timeStamp = new Date();
+
+console.log(timeStamp);
