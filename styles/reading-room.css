@@ -21,12 +21,26 @@ body {
     color: white;  
 }
 
-#buttonDiv {
+#homeButtonDiv {
     border: solid gray none;
     margin: 5px;
     display: flex;
     align-items: center;
 }
+#clear-button-div {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center; 
+} 
+
+#buttonSpan {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
 
 main {
     color: white;
