@@ -11,14 +11,29 @@ header {
     font-size: 350%;
     font-weight: 600;
     padding-top: 2%;
-    text-decoration: underline;
-    
+    text-decoration: underline; 
+
 }
 
 
 body {
     background-color: black;
+    color: white;  
 }
+
+#buttonDiv {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    color: white;
+    margin-top: 7%;
+}
+
+
 
 button:hover {
     background:#e4a77b;
@@ -29,9 +44,13 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
+    font-family: hill house;
+    border-style: hidden ;
+    padding: 10px;
+    border-radius: 5px;
     width: max-content;
     float: left;
-    font-family: hill house;
+    margin: 5px;
 }
 
 
@@ -45,7 +64,7 @@ button {
 
 
 .card > img:hover {
-    border: 5px yellow solid;
+    border: 5px #e4a77b solid;
 }
 
 
@@ -85,4 +104,5 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    color: white;
 }
