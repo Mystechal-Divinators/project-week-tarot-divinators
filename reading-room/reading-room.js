@@ -13,7 +13,9 @@ randomCard.forEach(card => {
 
 let localStorageCards = getLocalStorage(CARDS) || [];
 
-// randomCard is an array, so pushing it into an array doesn't work correctly
-localStorageCards.push(randomCard);
+for (let i = 0; i < randomCard.length; i++) {
+    const oneCard = randomCard[i];
+    localStorageCards.push(oneCard);
+}
 
 setLocalStorage(CARDS, localStorageCards);
