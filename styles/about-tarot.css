@@ -1,9 +1,9 @@
+
+
 @font-face {
     font-family: Hill House;
         src:url('../assets/font/Hill_House\ 2.otf')
 }
-
-
 header {
     font-family: Hill House;
     color: black;
@@ -69,5 +69,4 @@ button {
     font-family: Hill House;
     padding-top: 12%;
 }
-
 
