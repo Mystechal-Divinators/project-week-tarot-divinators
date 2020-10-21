@@ -5,8 +5,9 @@ export const majorArcana = [
     {
         id: 'fool',
         name: 'The Fool',
-        //image: url('...'),
-        keyWords: 'Key Words: openness, trust; ready to take a risk; courage to stand your ground; \n freedom, independence; creativity; ',
+        image: './assets/major-arcana/fool.png',
+        keyWords: ' text text'
+        ,
         interpretation: 'Key Words',
             
         category: 'major-arcana',
@@ -14,7 +15,7 @@ export const majorArcana = [
     {
         id: 'magician',
         name: 'The Magician',
-        //image: url('...'),
+        image: './assets/major-arcana/magician.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -22,7 +23,7 @@ export const majorArcana = [
     {
         id: 'highPriestess',
         name: 'The High Priestess',
-        //image: url('...'),
+        image:'./assets/major-arcana/highpriestess.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -30,7 +31,7 @@ export const majorArcana = [
     {
         id: 'empress',
         name: 'The Empress',
-        //image: url('...'),
+        image:'./assets/major-arcana/empress.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -38,7 +39,7 @@ export const majorArcana = [
     {
         id: 'emperor',
         name: 'The Emperor',
-        //image: url('...'),
+        image:'./assets/major-arcana/emperor.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -46,7 +47,7 @@ export const majorArcana = [
     {
         id: 'hierophant',
         name: 'The Hierophant',
-        //image: url('...'),
+        image:'./assets/major-arcana/hierophant.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -54,7 +55,7 @@ export const majorArcana = [
     {
         id: 'lovers',
         name: 'The Lovers',
-        //image: url('...'),
+        image:'./assets/major-arcana/lovers.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -62,7 +63,7 @@ export const majorArcana = [
     {
         id: 'chariot',
         name: 'The Chariot',
-        //image: url('...'),
+        image:'./assets/major-arcana/chariot.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -70,7 +71,7 @@ export const majorArcana = [
     {
         id: 'strength',
         name: 'Strength',
-        //image: url('...'),
+        image:'./assets/major-arcana/strength.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -78,7 +79,7 @@ export const majorArcana = [
     {
         id: 'hermit',
         name: 'The Hermit',
-        //image: url('...'),
+        image:'./assets/major-arcana/hermit.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -86,7 +87,7 @@ export const majorArcana = [
     {
         id: 'wheel',
         name: 'The Wheel of Fortune',
-        //image: url('...'),
+        image:'./assets/major-arcana/wheeloffortune.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -94,7 +95,7 @@ export const majorArcana = [
     {
         id: 'justice',
         name: 'Justice',
-        //image: url('...'),
+        image:'./assets/major-arcana/justice.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -102,7 +103,7 @@ export const majorArcana = [
     {
         id: 'hangedMan',
         name: 'The Hanged Man',
-        //image: url('...'),
+        image:'./assets/major-arcana/hangedman.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -110,7 +111,7 @@ export const majorArcana = [
     {
         id: 'death',
         name: 'Death',
-        //image: url('...'),
+        image:'./assets/major-arcana/death.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -118,7 +119,7 @@ export const majorArcana = [
     {
         id: 'temperance',
         name: 'Temperance',
-        //image: url('...'),
+        image:'./assets/major-arcana/temperance.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -126,7 +127,7 @@ export const majorArcana = [
     {
         id: 'devil',
         name: 'The Devil',
-        //image: url('...'),
+        image:'./assets/major-arcana/devil.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -134,7 +135,7 @@ export const majorArcana = [
     {
         id: 'tower',
         name: 'The Tower',
-        //image: url('...'),
+        image:'./assets/major-arcana/tower.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -142,7 +143,7 @@ export const majorArcana = [
     {
         id: 'star',
         name: 'The Star',
-        //image: url('...'),
+        image:'./assets/major-arcana/star.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -150,7 +151,7 @@ export const majorArcana = [
     {
         id: 'moon',
         name: 'The Moon',
-        //image: url('...'),
+        image:'./assets/major-arcana/moon.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -158,7 +159,7 @@ export const majorArcana = [
     {
         id: 'sun',
         name: 'The Sun',
-        //image: url('...'),
+        image:'./assets/major-arcana/sun.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -166,7 +167,7 @@ export const majorArcana = [
     {
         id: 'judgment',
         name: 'Judgment',
-        //image: url('...'),
+        image:'./assets/major-arcana/judgement.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',
@@ -174,7 +175,7 @@ export const majorArcana = [
     {
         id: 'world',
         name: 'The World',
-        //image: url('...'),
+        image:'./assets/major-arcana/world.png',
         keyWords: 'text text text',
         interpretation: 'text text text',
         category: 'major-arcana',

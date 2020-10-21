@@ -20,9 +20,11 @@ for (let i = 0; i < recentCards.length; i++) {
 
     renderCard(oneRecentCard);
 };
-
+    
 //Button to clear local storage. This button includes a console.log that will need to be removed later.
 clearButton.addEventListener('click', () => {
     console.log('Clear button was clicked.');
     localStorage.clear();
+  
+    window.location.reload();
 });
