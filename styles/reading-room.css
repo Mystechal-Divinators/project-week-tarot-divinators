@@ -11,14 +11,25 @@ header {
     font-size: 350%;
     font-weight: 600;
     padding-top: 2%;
-    text-decoration: underline;
-    
+    padding-bottom: 2.75%;
+    text-decoration: underline; 
+
 }
 
 
 body {
     background-color: black;
+    color: white;  
 }
+
+
+
+main {
+    color: white;
+    margin-top: 7%;
+}
+
+
 
 button:hover {
     background:#e4a77b;
@@ -29,9 +40,14 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
+    font-family: hill house;
+    padding-top: 12%;
+    border-style: hidden ;
+    padding: 10px;
+    border-radius: 5px;
     width: max-content;
     float: left;
-    font-family: hill house;
+    margin: 3px;
 }
 
 
@@ -85,4 +101,5 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    color: white;
 }

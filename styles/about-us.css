@@ -62,8 +62,12 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
+    font-family: hill house;
+    padding-top: 12%;
+    border-style: hidden ;
+    padding: 10px;
+    border-radius: 5px;
     width: max-content;
-    float: right;
+    float: left;
+    margin: 3px;
 }
-
-
