@@ -6,7 +6,8 @@ export const majorArcana = [
         id: 'fool',
         name: 'The Fool',
         //image: url('...'),
-        keyWords: 'Key Words: openness, trust; ready to take a risk; courage to stand your ground; \n freedom, independence; creativity; ',
+        keyWords: ' text text'
+        ,
         interpretation: 'Key Words',
             
         category: 'major-arcana',
