@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+
     <link rel="stylesheet" href="../styles/recent-cards.css">
     <title>recent cards</title>
 </head>
 <body>
     <header>
         Recent Cards
-        <div>
         <!-- navigation links -->
         <!-- back to home -->
-        <span class="headerSpan">
-            <div class="homeButtonDiv">
-                <a href="../index.html">     
-                    <button id="homeButton">Home</button>
+        <div id="homeButtonDiv">
+            <span id="buttonSpan">
+                <a href="../index.html">
+                     <button id="homeButton">Home</button>
                 </a>
-            </div>
-        </span>
+                <button class="clear-button">Clear Saved Cards</button>
+            </span> 
         </div>
+    
     </header>
     <main>
         
-        <div id="clear-button-div">
-            <button class="clear-button">Clear Saved Cards</button>
-        </div>
+     
     
         <div>
             <p id="message"></p>    
