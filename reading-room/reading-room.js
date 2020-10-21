@@ -16,6 +16,7 @@ let localStorageCards = getLocalStorage(CARDS) || [];
 for (let i = 0; i < randomCard.length; i++) {
     const oneCard = randomCard[i];
     localStorageCards.push(oneCard);
+    
 }
 
 setLocalStorage(CARDS, localStorageCards);

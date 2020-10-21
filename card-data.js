@@ -6,7 +6,7 @@ export const majorArcana = [
         id: 'fool',
         name: 'The Fool',
         image: './assets/major-arcana/fool.png',
-        keyWords: ' text text'
+        keyWords: ' text text \n text'
         ,
         interpretation: 'Key Words',
             
