@@ -5,8 +5,8 @@
 
 header {
     font-family: Hill House;
-    color: black;
-    background-color: rgb(209, 205, 205);
+    color: rgb(255, 255, 255);
+    background-color:black;
     text-align: center;
     font-size: 300%;
     font-weight: 600;
@@ -16,12 +16,12 @@ header {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     color: white;   
 }
 
 main {
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     margin-top: 2%;
 }
 
