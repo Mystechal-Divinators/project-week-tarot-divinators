@@ -2,17 +2,17 @@ import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
 import { renderCard } from '../utils/renderCard.js';
 
+
 const clearButton = document.querySelector('.clear-button');
+var paragraph = document.getElementById('message');
 
 //create variable to hold card array from local storage
 const recentCards = getLocalStorage(CARDS);
 console.log(recentCards);
 
-if (recentCards.length < [0]) {
-
+if (recentCards <= [0]) {
     console.log('You have no recent readings');
-
-    document.createText('You have no recent readings. Please navigate back to home.');
+    paragraph.textContent = 'You have no recent readings. Please navigate back to home.';
 
 } else { 
 
