@@ -54,6 +54,7 @@ main {
     margin: 20px;
 }
 
+
 .description {
     display: flex;
     justify-content: center;
@@ -61,3 +62,23 @@ main {
     color: darkgrey;
     font-family: 'Catamaran', sans-serif;
 }
+
+#refreshButton {
+    background-color: rgb(17, 17, 17);
+    visibility: hidden;
+}
+
+#refreshButton:hover {
+    background:#e4a77be5;
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
