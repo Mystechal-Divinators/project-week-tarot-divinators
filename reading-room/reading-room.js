@@ -27,6 +27,8 @@ function clickHandler() {
     });
     
     const generatedCards = document.getElementsByClassName('card');
+
+    // const tarotSound = new sound('../assets/sound/tarot-sound.mp3');
     
     let localStorageCards = getLocalStorage(CARDS) || [];
     
@@ -48,6 +50,11 @@ const onClick = (e) => {
 
     refreshButton.style.visibility = 'visible';
 
+    const audio = document.querySelector('audio');
+    audio.volume = 0.1;
+    audio.play();
+    
+    // tarotSound.play();
 };
 
 const deck = document.querySelector('.card-img.top');
