@@ -41,11 +41,9 @@ section {
 button:hover {
     background:#e4a77b;
     color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
 }
-button:hover {
-    box-shadow: 0 0 15px #ffffff;
-    box-shadow: 0 0 15px #ffffff;
-  }
+
 
 
 button {
