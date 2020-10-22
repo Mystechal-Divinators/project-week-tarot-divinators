@@ -41,25 +41,6 @@ footer {
     background-color: rgb(0, 0, 0);
 }
 
-/* button:hover {
-    background:#e4a77b;
-    color: #ffffff;
-    box-shadow: 0 0 15px #ffffff;
-} */
-
-/* button {
-    background: #000000;
-    transition: all .5s ease-in-out;
-    color: white;
-    font-family: hill house;
-    padding-top: 12%;
-    border-style: hidden ;
-    padding: 10px;
-    border-radius: 5px;
-    width: max-content;
-    float: left;
-} */
-
 label {
     display: flex;
     flex-wrap: wrap;
@@ -85,12 +66,12 @@ input[type=radio]:checked + div > p {
     background-color: rgb(17, 17, 17);
     margin-top: 50px;
 }
+
 #beginButton:hover {
     background:#e4a77b;
     color: #ffffff;
     box-shadow: 0 0 15px #ffffff;
 }
-
 
 .labels {
     display: flex; 
@@ -113,7 +94,7 @@ img {
 
 [type=radio]:checked + img {
     box-shadow: 0 0 15px #bba3919f;
-  }
+}
 
 p {
 font-family: Hill House;    
@@ -124,10 +105,10 @@ text-align: center;
 color: gray;
 }
 
-.little-card {
+/* .little-card {
     border: 1px solid white;
     height: 32px;
     width: 20px;
     border-radius: 4px;
     margin: 2px;
-}
+} */
