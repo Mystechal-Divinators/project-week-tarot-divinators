@@ -24,7 +24,7 @@ header {
 }
 
 button:hover {
-    background:#e4a77b;
+    background:#e4a77be5;
     color: #ffffff;
     box-shadow: 0 0 15px #ffffff;
 }

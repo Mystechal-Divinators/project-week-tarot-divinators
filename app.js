@@ -2,7 +2,7 @@ import { ONE_OR_THREE } from './utils/constants.js';
 import { setLocalStorage } from './utils/localStorage-utils.js';
 import { majorArcana } from './card-data.js';
 
-const beginButton = document.getElementById('begin-button');
+const beginButton = document.getElementById('beginButton');
 
 beginButton.addEventListener('click', () => {
     const oneOrThree = document.querySelector(':checked');
