@@ -6,9 +6,8 @@ export const majorArcana = [
         id: 'fool',
         name: 'The Fool',
         image: './assets/major-arcana/fool.png',
-        keyWords: ' text text \n text'
-        ,
-        interpretation: 'Key Words',
+        keyWords: 'Key Words: Openness, trust; ready to take a risk; courage to stand your \n ground; freedom, independence; creativity; great potential; possibility to take a quantum leap; listening to the heart\'s voice.',
+        interpretation: 'Indications: You are ready for a new beginning, perhaps even a quantum \n leap. Give in, dare to leap, even if fear attempts to hold you back. Trust \n the voice from within your heart.',
             
         category: 'major-arcana',
     }, 
@@ -16,7 +15,7 @@ export const majorArcana = [
         id: 'magician',
         name: 'The Magician',
         image: './assets/major-arcana/magician.png',
-        keyWords: 'text text text',
+        keyWords: 'Key Words:',
         interpretation: 'text text text',
         category: 'major-arcana',
     },  

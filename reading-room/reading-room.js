@@ -4,8 +4,6 @@ import { getLocalStorage, setLocalStorage } from '../utils/localStorage-utils.js
 import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
 import { timestampMaker } from '../utils/timestamp.js';
 
-const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
-const randomCard = nCards(spreadSelection);
 const currentDate = timestampMaker();
 
 function clickHandler() {
@@ -15,7 +13,7 @@ function clickHandler() {
     randomCard.forEach(card => {
         renderCard(card);
     });
-
+    
     // const generatedCards = document.getElementsByClassName('card');
 
     // generatedCards[0].classList.add('animation-one');
