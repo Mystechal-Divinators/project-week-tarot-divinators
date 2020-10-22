@@ -41,7 +41,7 @@ const onClick = (e) => {
     deck.removeEventListener('click', onClick);
     e.target.classList.remove('top');
 
-    cardDesc.textContent = 'click card to reveal interpretation';
+    cardDesc.textContent = 'NAME TAG HERE click card below to reveal your interpretation';
 
     refreshButton.style.visibility = 'visible';
 };
