@@ -99,6 +99,7 @@ button {
 
 .card-img.top:hover {
     box-shadow: 0 0 15px #bba3919f;
+    cursor: pointer;
 }
 
 .card-img {

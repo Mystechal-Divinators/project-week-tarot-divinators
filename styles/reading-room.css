@@ -47,6 +47,7 @@ main {
     transition: 0.5s ease-in-out;
     margin-bottom: 40px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .interpretation, .keywords {
@@ -57,4 +58,6 @@ main {
     display: flex;
     justify-content: center;
     padding: 20px;
+    color: darkgrey;
+    font-family: 'Catamaran', sans-serif;
 }
