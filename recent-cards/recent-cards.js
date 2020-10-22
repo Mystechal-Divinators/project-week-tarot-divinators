@@ -10,34 +10,36 @@ var paragraph = document.getElementById('message');
 //NEW STUFF START -Franco
 const currentDate = timestampMaker();
 
-// console.log(currentDate);
+console.log("currentDate: ", currentDate);
 
 const anchor = document.querySelector('section');
 
 
 function renderRecentCard(card) {
     const container = document.createElement('div');
+    const oneCard = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
-    const interpretation = document.createElement('div');
-    const keywords = document.createElement('div');
+    // const interpretation = document.createElement('div');
+    // const keywords = document.createElement('div');
 
     const date = document.createElement('div');
     date.classList.add('timestamp');
     date.classList.add('hide');
     date.textContent = currentDate;
-    // console.log(date);
 
-    container.classList.add('card');
+    oneCard.classList.add('card');
+    container.classList.add('card-container');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     // interpretation.textContent = card.interpretation;
     // keywords.textContent = card.keyWords;
 
-    // keywords.classList.add('reveal');
+    // img.classList.add('reveal');
     // console.log(keywords);
 
-    container.append(img, title, keywords, interpretation);
+    oneCard.append(img, title); /* removed interpretation and keywords for now */
+    container.append(oneCard, date);
     anchor.append(container);
 }
 //NEW STUFF END -Franco
@@ -62,7 +64,6 @@ if (recentCards <= [0]) {
 //loop to render cards in recentCards array
     for (let i = 0; i < recentCards.length; i++) {
         const oneRecentCard = recentCards[i];
-
         renderRecentCard(oneRecentCard);
     }
 }

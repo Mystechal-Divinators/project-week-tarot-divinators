@@ -1,9 +1,9 @@
 //Timestamp function START
 export function timestampMaker() {
 
-const timestamp = new Date();
+    const timestamp = new Date();
 
-console.log(timestamp);
+    console.log("timestampMaker timestamp: ", timestamp);
 
     const year = timestamp.getFullYear();
     let month = timestamp.getMonth();
@@ -12,50 +12,50 @@ console.log(timestamp);
 
     if (day === 0) {
         day = 'Sun';
-    } else if  (day === 1) {
+    } else if (day === 1) {
         day = 'Mon';
     } else if (day === 2) {
         day = 'Tue';
-    } else if  (day === 3) {
+    } else if (day === 3) {
         day = 'Wed';
-    } else if  (day === 4) {
+    } else if (day === 4) {
         day = 'Thurs';
-    } else if  (day === 5) {
+    } else if (day === 5) {
         day = 'Fri';
-    } else if  (day === 6) {
+    } else if (day === 6) {
         day = 'Sat';
     }
 
     if (month === 0) {
         month = 'January';
-    } else if  (month === 1) {
+    } else if (month === 1) {
         month = 'February';
     } else if (month === 2) {
         month = 'March';
-    } else if  (month === 3) {
+    } else if (month === 3) {
         month = 'April';
-    } else if  (month === 4) {
+    } else if (month === 4) {
         month = 'May';
-    } else if  (month === 5) {
+    } else if (month === 5) {
         month = 'June';
-    } else if  (month === 6) {
+    } else if (month === 6) {
         month = 'July';
-    } else if  (month === 7) {
+    } else if (month === 7) {
         month = 'August';
     } else if (month === 8) {
         month = 'September';
-    } else if  (month === 9) {
+    } else if (month === 9) {
         month = 'October';
-    } else if  (month === 10) {
+    } else if (month === 10) {
         month = 'Novemeber';
-    } else if  (month === 11) {
+    } else if (month === 11) {
         month = 'December';
     }
 
     const displayDate = `This reading occured on ${day}, ${month} ${date}, ${year}.`;
 
 
-return displayDate;
+    return displayDate;
 
 }
 //Timestamp function END

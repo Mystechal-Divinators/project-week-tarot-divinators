@@ -64,14 +64,23 @@ button {
     justify-content: space-around;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .timestamp {
     color: red;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .hide {
     visibility: hidden;
 }
 
-.reveal:hover + .hide {
+.card:hover + .hide {
     visibility: visible;
 }
+
