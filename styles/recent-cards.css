@@ -3,67 +3,26 @@
         src:url('../assets/font/Hill_House\ 2.otf')
 }
 
-header {
-    font-family: Hill House;
-    color: rgb(255, 255, 255);
-    background-color:black;
-    text-align: center;
-    font-size: 300%;
-    font-weight: 600;
-    padding-top: 2%;
-    text-decoration: underline;   
-}
-
-.homeButtonDiv {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-}
-
 body {
     background-color: rgb(17, 17, 17);
     color: white;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
     background-color: rgb(17, 17, 17);
     margin-top: 2%;
-}
-
-section {
-    border: none;
+    width: 1000px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-button:hover {
-    background:#e4a77b;
-    color: #ffffff;
-    box-shadow: 0 0 15px #ffffff;
-}
-
-
-
-button {
-    background: #000000;
-    transition: all .5s ease-in-out;
-    color: white;
-    font-family: Hill House;
-    border-style: hidden ;
-    padding: 10px;
-    border-radius: 5px;
-    width: max-content;
-    float: left;
-    margin: 5px;
+    justify-content: center;
 }
 
 .main-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -87,7 +46,6 @@ button {
 
 .timestamp {
     color: red;
-/*  check that display: flex works okay here    */
     display: flex;
     margin-bottom: 20px;
     width: 120px;
@@ -104,4 +62,10 @@ button {
 
 .reveal:hover + .hide {
     visibility: visible;
+}
+
+.no-cards-message {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
 }

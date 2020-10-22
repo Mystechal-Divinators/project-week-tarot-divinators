@@ -1,24 +1,11 @@
-
-
 @font-face {
     font-family: Hill House;
         src:url('../assets/font/Hill_House\ 2.otf')
 }
 
-header {
-    font-family: Hill House;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 350%;
-    font-weight: 600;
-    padding-top: 2%;
-    text-decoration: underline;
-    
-}
-
 h2 {
     font-family: hill house;
+    font-size: 1.3em;
     margin: 40px;
 }
 
@@ -52,14 +39,6 @@ img {
     width: 25%; 
 }
 
-div {
-    border: solid gray none;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
 main {
     background-color: rgb(17, 17, 17);
     margin-left: 10%;
@@ -68,28 +47,5 @@ main {
 
 section {
     border: white none;
+    margin-bottom: 40px;
 }
-
-button:hover {
-    background:#e4a77b;
-    color: #ffffff;
-    box-shadow: 0 0 15px #ffffff;
-}
-
-button {
-    background: #000000;
-    transition: all .5s ease-in-out;
-    color: white;
-    width: max-content;
-    float: right;
-    font-family: Hill House;
-    border-style: hidden ;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-
-
-
