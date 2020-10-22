@@ -50,12 +50,22 @@
     right: 0;
 }
 
-.card-img:hover {
+.card-img.top:hover {
     border: 1px peachpuff solid;
+}
+
+.card-back {
+    margin-left: 20px;
 }
 
 .card-img {
     border-radius: 12px;
     height: 420px;
     width: 240px;
+}
+
+.card-img, .card > img {
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid black;
+    background-color: black;
 }
