@@ -1,19 +1,14 @@
 //Timestamp function START
-export function timeStampMaker() {
+export function timestampMaker() {
 
-const timeStamp = new Date();
+const timestamp = new Date();
 
-console.log(timeStamp);
+console.log(timestamp);
 
-    const year = timeStamp.getFullYear();
-    let month = timeStamp.getMonth();
-    const date = timeStamp.getDate();
-    let day = timeStamp.getDay();
-
-    console.log('The year is ' + year);
-    console.log('The month is ' + month);
-    console.log('The date is ' + date);
-    console.log('The day is ' + day);
+    const year = timestamp.getFullYear();
+    let month = timestamp.getMonth();
+    const date = timestamp.getDate();
+    let day = timestamp.getDay();
 
     if (day === 0) {
         day = 'Sun';
@@ -59,7 +54,6 @@ console.log(timeStamp);
 
     const displayDate = `This reading occured on ${day}, ${month} ${date}, ${year}.`;
 
-console.log(displayDate);
 
 return displayDate;
 
@@ -68,9 +62,9 @@ return displayDate;
 
 
 /*
-import { timeStampMaker } from './timestamp.js';
+import { timestampMaker } from './timestamp.js';
 
-    const currentDate = timeStampMaker();
+    const currentDate = timestampMaker();
 
     const timeBox = document.createElement('div');
     timeBox.textContent = currentDate;
@@ -79,4 +73,20 @@ import { timeStampMaker } from './timestamp.js';
     container.append(img, title, interpretation, keywords, timeBox);
     anchor.append(container);
 }
+
+    console.log('The year is ' + year);
+    console.log('The month is ' + month);
+    console.log('The date is ' + date);
+    console.log('The day is ' + day);
+
+    console.log(displayDate);
+
+
+//Get timestamp
+const timeStamp = new Date();
+console.log(timeStamp);
+
+//Timestamp in milliseconds
+const timeStamp2 = Math.floor(Date.now() / 1000);
+console.log(timeStamp2);
 */

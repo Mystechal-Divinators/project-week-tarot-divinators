@@ -2,6 +2,9 @@ import { renderCard } from '../utils/renderCard.js';
 import { nCards } from '../utils/logic.js';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage-utils.js';
 import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
+import { timestampMaker } from '../utils/timestamp.js';
+
+const currentDate = timestampMaker();
 
 function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
@@ -21,6 +24,7 @@ function clickHandler() {
     
     for (let i = 0; i < randomCard.length; i++) {
         const oneCard = randomCard[i];
+        oneCard.timestamp = currentDate;
         localStorageCards.push(oneCard);
     }
     
@@ -36,10 +40,3 @@ const deck = document.querySelector('img');
 
 deck.addEventListener('click', onClick);
 
-//Get timestamp
-const timeStamp = new Date();
-console.log(timeStamp);
-
-//Timestamp in milliseconds
-const timeStamp2 = Math.floor(Date.now() / 1000);
-console.log(timeStamp2);

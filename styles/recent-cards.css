@@ -64,3 +64,31 @@ button {
     align-items: center;
     justify-content: space-around;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timestamp {
+    color: red;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.reveal:hover + .hide {
+    visibility: visible;
+}
