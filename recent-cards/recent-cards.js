@@ -60,6 +60,8 @@ export function renderRecentCard(card, cardBack) {
     const img = document.createElement('img');
     const title = document.createElement('p');
 
+console.log(container);
+
     const currentDate = card.timestamp;
 console.log(currentDate);
 
@@ -68,7 +70,7 @@ console.log(currentDate);
 //    date.classList.add('hide');
     date.textContent = currentDate;
 
-    title.classList.add('reveal');
+    frontContainer.classList.add('reveal');
     //keywords.classList.add('box1');
     //interpretation.classList.add('box2');
 
