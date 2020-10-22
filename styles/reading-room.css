@@ -29,6 +29,14 @@ main {
     margin-bottom: 40px;
 }
 
+.description, .greet-user {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: darkgrey;
+    font-family: 'Catamaran', sans-serif;
+}
+
 #card-desc {
     font-family: Hill House;
     font-size: 12px;
