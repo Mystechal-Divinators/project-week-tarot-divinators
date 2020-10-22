@@ -35,7 +35,7 @@ export function renderCard(card, cardBack) {
     //     container.append(backContainer);
     // }
 
-    /* 
+
     //
     // EXPERIMENT: interpretation styling
     // create a transparent div that becomes opaque on click
@@ -43,7 +43,6 @@ export function renderCard(card, cardBack) {
     const colorBlock = document.createElement('div');
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
-
 
     // translate these styling tests to a css class
     colorBlock.style.width = '240px';
@@ -76,8 +75,6 @@ export function renderCard(card, cardBack) {
     container.append(colorBlock);
     // END EXPERIMENT
     //
-    */
-
 
     anchor.append(container);
 }
