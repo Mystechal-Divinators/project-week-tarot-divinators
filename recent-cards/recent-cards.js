@@ -60,12 +60,25 @@ export function renderRecentCard(card, cardBack) {
     const img = document.createElement('img');
     const title = document.createElement('p');
 
+    const currentDate = card.timestamp;
+console.log(currentDate);
+
+    const date = document.createElement('div');
+    date.classList.add('timestamp');
+//    date.classList.add('hide');
+    date.textContent = currentDate;
+
+    title.classList.add('reveal');
+    //keywords.classList.add('box1');
+    //interpretation.classList.add('box2');
+
+
     container.classList.add('card-container');
     frontContainer.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     
-    frontContainer.append(img, title);
+    frontContainer.append(img, title, date);
     container.append(frontContainer);
 
     // if (cardBack) {
