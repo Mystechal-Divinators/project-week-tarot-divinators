@@ -42,6 +42,11 @@ button:hover {
     background:#e4a77b;
     color: #ffffff;
 }
+button:hover {
+    box-shadow: 0 0 15px #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+  }
+
 
 button {
     background: #000000;
@@ -64,21 +69,6 @@ button {
     align-items: center;
     justify-content: space-around;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .timestamp {
