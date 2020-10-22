@@ -139,11 +139,3 @@ button {
 .interpretation, .keywords {
     margin: 20px;
 }
-
-.description {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    color: darkgrey;
-    font-family: 'Catamaran', sans-serif;
-}
