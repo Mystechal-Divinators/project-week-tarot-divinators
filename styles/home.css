@@ -84,15 +84,11 @@ img {
     margin: 10px;
 }
 
-.one-card {
-    background-image: src('../assets/welcome-cards/1-card-back.png');
+input[type=radio]:checked + img {
+    box-shadow: 0 0 15px #bba3919f;
 }
 
-.three-card {
-    background-image: src('../assets/welcome-cards/3-card-back.png');
-}
-
-[type=radio]:checked + img {
+input[type=radio]:checked + div > img {
     box-shadow: 0 0 15px #bba3919f;
 }
 
