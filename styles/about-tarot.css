@@ -5,8 +5,6 @@
         src:url('../assets/font/Hill_House\ 2.otf')
 }
 
-
-
 header {
     font-family: Hill House;
     color: rgb(255, 255, 255);
@@ -75,6 +73,7 @@ section {
 button:hover {
     background:#e4a77b;
     color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
 }
 
 button {
@@ -89,5 +88,8 @@ button {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+
 
 

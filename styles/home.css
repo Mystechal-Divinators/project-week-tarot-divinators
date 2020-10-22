@@ -64,6 +64,7 @@ footer {
 button:hover {
     background:#e4a77b;
     color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
 }
 
 button {
@@ -89,6 +90,7 @@ label {
 
 label:hover {
     transform: scale(1.2);
+   
 }
 
 input {
@@ -111,4 +113,7 @@ input[type=radio]:checked + div > p {
     border-radius: 4px;
     margin: 2px;
 }
-
+  
+  /* button:hover {
+    box-shadow: 0 0 15px #ffffff;
+  } */
