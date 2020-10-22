@@ -52,8 +52,7 @@ button {
     background: #000000;
     transition: all .5s ease-in-out;
     color: white;
-    font-family: hill house;
-   
+    font-family: Hill House;
     border-style: hidden ;
     padding: 10px;
     border-radius: 5px;
@@ -70,18 +69,11 @@ button {
     justify-content: space-around;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .card {
     position: relative;
@@ -97,6 +89,9 @@ button {
 
 .timestamp {
     color: red;
+/*  check that display: flex works okay here    */
+    display: flex;
+    margin-bottom: 20px;
     width: 120px;
     position: absolute;
     top: 10%;
