@@ -7,16 +7,14 @@ import { timestampMaker } from '../utils/timestamp.js';
 
 
 const cardDesc = document.getElementById('card-desc');
-
 const refreshButton = document.querySelector('#refreshButton');
-
 const currentDate = timestampMaker();
 
 cardStack();
 
 // dee's notes for setting up transition/animation
 // grab the *second* card because the first and last have special styling/classes
-const cardBack = document.querySelectorAll('.card-img')[1];
+// const cardBack = document.querySelectorAll('.card-img')[1];
 
 function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
@@ -26,7 +24,7 @@ function clickHandler() {
         renderCard(card, cardBack.cloneNode());
     });
     
-    const generatedCards = document.getElementsByClassName('card');
+    // const generatedCards = document.getElementsByClassName('card');
     
     let localStorageCards = getLocalStorage(CARDS) || [];
     
@@ -34,8 +32,7 @@ function clickHandler() {
         const oneCard = randomCard[i];
         oneCard.timestamp = currentDate;
         localStorageCards.push(oneCard);
-    }
-    
+    }   
     setLocalStorage(CARDS, localStorageCards);
 }
 
@@ -47,7 +44,6 @@ const onClick = (e) => {
     cardDesc.textContent = 'click the card(s) to reveal their interpretations';
 
     refreshButton.style.visibility = 'visible';
-
 };
 
 const deck = document.querySelector('.card-img.top');
@@ -56,6 +52,6 @@ deck.addEventListener('click', onClick);
 
 
 refreshButton.addEventListener('click', () => {
-    console.log('reset button was clicked.');
+    // console.log('reset button was clicked.');
     window.location.reload();
 });
