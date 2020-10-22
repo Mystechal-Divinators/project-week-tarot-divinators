@@ -60,19 +60,19 @@ export function renderRecentCard(card, cardBack) {
     const img = document.createElement('img');
     const title = document.createElement('p');
 
-console.log(container);
+//console.log(container);
 
     const currentDate = card.timestamp;
-console.log(currentDate);
 
     const date = document.createElement('div');
     date.classList.add('timestamp');
-//    date.classList.add('hide');
+    date.classList.add('hide');
     date.textContent = currentDate;
 
-    frontContainer.classList.add('reveal');
-    //keywords.classList.add('box1');
-    //interpretation.classList.add('box2');
+//    container.classList.add('reveal');
+//    frontContainer.classList.add('reveal');
+//    img.classList.add('reveal');
+//    title.classList.add('reveal');
 
 
     container.classList.add('card-container');
@@ -80,7 +80,7 @@ console.log(currentDate);
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     
-    frontContainer.append(img, title, date);
+    frontContainer.append(img, title);
     container.append(frontContainer);
 
     // if (cardBack) {
@@ -110,8 +110,12 @@ console.log(currentDate);
         }
     });
     
+    colorBlock.classList.add('reveal');
+console.log(colorBlock);
+console.log(date);
+
     colorBlock.append(keywords, interpretation);
-    container.append(colorBlock);
+    container.append(colorBlock, date);
 
     anchor.append(container);
 }

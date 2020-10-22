@@ -55,18 +55,6 @@ main {
     text-align: center;
 }
 
-.box1 {
-    width: 350px;
-    height: 140px;
-    text-align: justify;
-}
-
-.box2 {
-    width: 350px;
-    height: 150px;
-    text-align: justify;
-}
-
 .timestamp {
     color: rgb(255, 255, 255);
     /* change font-family */
