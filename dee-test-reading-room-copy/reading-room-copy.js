@@ -13,7 +13,6 @@ function renderCard(card) {
     const keywords = document.createElement('div');
 
     container.classList.add('card');
-    // container.classList.add('animation');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
@@ -33,9 +32,9 @@ function clickHandler() {
 
     const generatedCards = document.getElementsByClassName('card');
 
-    generatedCards[0].classList.add('animation-one');
-    generatedCards[1].classList.add('animation-two');
-    generatedCards[2].classList.add('animation-three');
+    generatedCards[0].classList.add('transition-one');
+    generatedCards[1].classList.add('transition-two');
+    generatedCards[2].classList.add('transition-three');
     
     let localStorageCards = getLocalStorage(CARDS) || [];
     

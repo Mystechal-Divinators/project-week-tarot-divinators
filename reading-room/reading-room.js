@@ -3,10 +3,6 @@ import { nCards } from '../utils/logic.js';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage-utils.js';
 import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
 
-const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
-const randomCard = nCards(spreadSelection);
-
-
 function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
     const randomCard = nCards(spreadSelection);
@@ -14,7 +10,7 @@ function clickHandler() {
     randomCard.forEach(card => {
         renderCard(card);
     });
-
+    
     // const generatedCards = document.getElementsByClassName('card');
 
     // generatedCards[0].classList.add('animation-one');
