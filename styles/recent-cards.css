@@ -60,10 +60,10 @@ main {
     /* change font-family */
     display: flex;
     margin-bottom: 20px;
-    width: 120px;
+    width: 400px;
     position: absolute;
-    top: 105%;
-    left: 50%;
+    top: 90%;
+    left: 60%;
     transform: translate(-50%, -50%);
 }
 
