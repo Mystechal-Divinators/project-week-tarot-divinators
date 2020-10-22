@@ -49,12 +49,10 @@ const onClick = (e) => {
     refreshButton.style.visibility = 'visible';
 
 
-    const audio = document.querySelector('audio');
+    const audio = document.querySelector('#audio-one');
     audio.volume = 0.1;
     audio.play();
     
-    
-
 };
 
 const deck = document.querySelector('.card-img.top');

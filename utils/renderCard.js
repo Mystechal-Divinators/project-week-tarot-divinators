@@ -38,11 +38,18 @@ export function renderCard(card, cardBack) {
     interpretation.textContent = card.interpretation;
 
     colorBlock.addEventListener('click', () => {
+        
         // 0 is falsey, so we can make a conditional block
         if (Number(colorBlock.style.opacity)) {
             colorBlock.style.opacity = 0;
+            const audio = document.querySelector('#audio-two');
+            audio.volume = 0.07;
+            audio.play();
         } else {
             colorBlock.style.opacity = 1;
+            const audio = document.querySelector('#audio-two');
+            audio.volume = 0.02;
+            audio.play();
         }
     });
     
