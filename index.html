@@ -10,100 +10,77 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
     <title>Welcome</title>
+    <link rel="icon" href="../assets/icon/iconball.png" type="image/png">
 </head>
 
 <body>
     <header>
-        Welcome
+        WELCOME
         <div>
+
         <!-- navigation links -->
-    <span class="headerSpan">
-        <div class="aboutTarotButtonDiv">
-            <a href="./about-tarot/index.html">     
-                 <button id="aboutTarotButton">About Tarot</button>
-            </a>
-        </div>
+ 
+           <span class="headerSpan">
+                <div class="aboutTarotButtonDiv">
+                    <a href="./about-tarot/index.html">     
+                        <button id="aboutTarotButton">About Tarot</button>
+                    </a>
+                </div>
+            </span>
+        <span class="header2Span">
+            <div class="bioButtonDiv">
+                <a href="./about-us/index.html">     
+                    <button id="aboutUsButton">About Us</button>
+                </a>
+            </div> 
+
         </span>
-    <span class="header2Span">
-        <div class="bioButtonDiv">
-            <a href="./about-us/index.html">     
-                 <button id="beginButton">About Us</button>
-            </a>
-        </div> 
-    </span>
-    <span class="header3Span">
-        <div class="recentCardButtonDiv">
-            <a href="./recent-cards/index.html">     
-                 <button id="recentCardsButton">Recent Cards</button>
-            </a>
-        </div>
-        </span>
-    
+        <span class="header3Span">
+            <div class="recentCardButtonDiv">
+                <a href="./recent-cards/index.html">     
+                    <button id="recentCardsButton">Recent Cards</button>
+                </a>
+            </div>
+            </span>
         </div>
     </header>
     <main>
         <section class="main-section">
-        <!-- hard-coded instructions section -->
-        <!-- radio buttons for one or three card spread -->
             <div id="one-or-three">
-                <!-- radio buttons -- two -->
                 <label>
-                    <input type="radio" name="one-or-three" value="1" checked >
-                    <!-- img here if desired -->
-                    <div class="lables">
-                        <p class="little-card"></p>
+                        <input type="radio" name="oneOrThree" value="1" checked >
+                        <img src="./assets/card-back/card-back.png" alt="">
+                        <!-- img here if desired -->
+                    <div class="lables">                       
                     </div>
-                    one card
+                        <p id="one-card-description">
+                        daily card
+                        </p>
                 </label>
                 <label>
-                    <input type="radio" name="one-or-three" value="3">
-                    <!-- img here if desired -->
-                    <div class="labels">
-                        <p class="little-card"></p>
-                        <p class="little-card"></p>
-                        <p class="little-card"></p>
+                        <input type="radio" name="oneOrThree" value="3">
+                        <img src="./assets/welcome-cards/3-card-back2.png" alt="">
+                        <!-- img here if desired -->
+                    <div class="labels">                      
                     </div>
-                    three cards
+                        <p id="three-card-description">
+                        past//present//future
+                        </p>
                 </label>
+                
             </div>
-            <!-- <div id="deck-options">
-                <label>
-                    <input type="radio" name="deck-options" checked >
-                    deck 1
-                </label>
-                <label>
-                    <input type="radio" name="deck-options">
-                    deck 2
-                </label>
-                <label>
-                    <input type="radio" name="deck-options">
-                    deck 3
-                </label>
-            </div>
-            <div id="background-options">
-                <label>
-                    <input type="radio" name="background-options" checked >
-                    background 1
-                </label>
-                <label>
-                    <input type="radio" name="background-options">
-                    background 2
-                </label>
-                <label>
-                    <input type="radio" name="background-options">
-                    background 3
-                </label>
-            </div> -->
             <div id="beginButtonDiv">
+
                <a href="./reading-room/index.html">
-                    <button id="begin-button">BEGIN</button>
+                    <button id="beginButton">BEGIN</button>
                </a>
+
+
             </div>
         </section>
     </main>
     <footer>
         <div>
-
         </div>
     </footer>
 

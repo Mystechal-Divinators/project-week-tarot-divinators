@@ -1,12 +1,56 @@
+header {
+    font-family: Hill House;
+    color: rgb(255, 255, 255);
+    background-color:black;
+    text-align: center;
+    font-size: 300%;
+    font-weight: 600;
+    padding-top: 2%;
+    text-decoration: underline;   
+    width: 100%;
+}
+
+.buttonDiv {
+    border: solid gray none;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.buttonSpan {
+    display: flex;
+}
+
+button:hover {
+    background:#e4a77be5;
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+}
+
+button {
+    background: #000000;
+    transition: all .5s ease-in-out;
+    color: white;
+    width: max-content;
+    float: right;
+    font-family: Hill House;
+    border-style: hidden ;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .card {
     position: relative;
     text-align: center;
     color: white;
-    margin: 5px;
+    margin: 10px;
 }
 
 .card > img {
-    border-radius: 30px;
+    border-radius: 12px;
     height: 420px;
     width: 240px;
 }
@@ -20,7 +64,7 @@
     background-color: #040707;
     width: 140px;
     height: 35px;
-    bottom: 13%;
+    bottom: 5%;
     line-height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +75,39 @@
 .card > div {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    width: 240px;
+}
+
+.card-back {
+    margin-left: 20px;
+}
+
+.card-img {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.card-img.top:hover {
+    box-shadow: 0 0 15px #bba3919f;
+}
+
+.card-img {
+    border-radius: 12px;
+    height: 420px;
+    width: 240px;
+}
+
+.card-img, .card > img {
+    box-shadow: 1px 1px 5px black;
+    border: 1px solid black;
+    background-color: black;
 }
