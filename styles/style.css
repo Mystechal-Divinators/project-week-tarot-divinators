@@ -3,6 +3,7 @@
     text-align: center;
     color: white;
     margin: 5px;
+    margin-bottom: 40px;
 }
 
 .card > img {
@@ -21,7 +22,7 @@
     background-color: #040707;
     width: 140px;
     height: 35px;
-    bottom: 13%;
+    bottom: 5%;
     line-height: 100%;
     margin-left: auto;
     margin-right: auto;

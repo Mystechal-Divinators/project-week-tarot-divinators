@@ -31,8 +31,8 @@ function renderRecentCard(card) {
     container.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
-    interpretation.textContent = card.interpretation;
-    keywords.textContent = card.keyWords;
+    // interpretation.textContent = card.interpretation;
+    // keywords.textContent = card.keyWords;
 
     keywords.classList.add('reveal');
     console.log(keywords);
