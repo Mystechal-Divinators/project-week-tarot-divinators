@@ -50,8 +50,6 @@ main {
     right: 0;
 }
 
-
-
 .card {
     position: relative;
     text-align: center;
@@ -99,6 +97,6 @@ main {
 
 .no-cards-message {
     display: flex;
+    padding-top: 40px;
     justify-content: center;
-    padding: 40px;
 }
