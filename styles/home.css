@@ -83,6 +83,7 @@ input[type=radio]:checked + div > p {
 
 #beginButton {
     background-color: rgb(17, 17, 17);
+    margin-top: 50px;
 }
 #beginButton:hover {
     background:#e4a77b;
@@ -92,7 +93,12 @@ input[type=radio]:checked + div > p {
 
 
 .labels {
-    display: flex;
+    display: flex; 
+}
+
+img {
+    height: 200px;
+    width: auto;
 }
 
 .one-card {
@@ -103,7 +109,13 @@ input[type=radio]:checked + div > p {
     background-image: src('../assets/welcome-cards/3-card-back.png');
 }
 
+[type=radio]:checked + img {
+    box-shadow: 0 0 15px #bba3919f;
+  }
+
 p {
+font-family: Hill House;    
+font-size: 11px;
 align-content: center;
 justify-content: center;
 text-align: center;
