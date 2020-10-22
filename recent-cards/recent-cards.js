@@ -24,9 +24,10 @@ function renderRecentCard(card) {
 
 
     const date = document.createElement('div');
-console.log(date);
-    date.classList.add('time');
+    date.classList.add('timestamp');
+    date.classList.add('hide');
     date.textContent = currentDate;
+console.log(date);
 
     container.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
@@ -34,10 +35,8 @@ console.log(date);
     interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
 
-
-
-
-
+    keywords.classList.add('reveal');
+console.log(keywords);
 
     container.append(img, title, interpretation, keywords, date);
     anchor.append(container);

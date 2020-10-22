@@ -58,7 +58,6 @@ button {
     align-items: center;
     justify-content: space-around;
 }
-<<<<<<< HEAD
 
 
 
@@ -76,32 +75,14 @@ button {
 
 
 
-
-
-
-.time {
-    color: yellow;
-}
-
-
-/*
-img:hover {
-    border: 5px solid rosybrown;
-}
-
-p {
-    border: 5px solid rosybrown;
+.timestamp {
+    color: red;
 }
 
 .hide {
-    background-color: yellow;
     visibility: hidden;
 }
 
-.cool:hover {
-    border: lightblue solid;
+.reveal:hover + .hide {
     visibility: visible;
 }
-*/
-=======
->>>>>>> 789dc2f147ff51fea1e478799cd1bc49fda197da
