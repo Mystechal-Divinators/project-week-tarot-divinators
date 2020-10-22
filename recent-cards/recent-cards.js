@@ -10,9 +10,9 @@ var paragraph = document.getElementById('message');
 
 
 //NEW STUFF START -Franco
-const currentDate = timestampMaker();
+//const currentDate = timestampMaker();
 
-console.log("currentDate: ", currentDate);
+//console.log("currentDate: ", currentDate);
 
 const anchor = document.querySelector('section');
 
@@ -22,8 +22,11 @@ function renderRecentCard(card) {
     const oneCard = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
-    // const interpretation = document.createElement('div');
-    // const keywords = document.createElement('div');
+    const interpretation = document.createElement('div');
+    const keywords = document.createElement('div');
+
+    const currentDate = card.timestamp;
+console.log(currentDate);
 
     const date = document.createElement('div');
     date.classList.add('timestamp');
@@ -34,19 +37,19 @@ function renderRecentCard(card) {
     container.classList.add('card-container');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
-    // interpretation.textContent = card.interpretation;
-    // keywords.textContent = card.keyWords;
+    interpretation.textContent = card.interpretation;
+    keywords.textContent = card.keyWords;
 
     img.classList.add('reveal');
 
-    oneCard.append(img, date, title); /* removed interpretation and keywords for now */
+    oneCard.append(img, date, title, keywords, interpretation); /* removed interpretation and keywords for now */
     container.append(oneCard);
-  /* 
-    keywords.classList.add('box');
-    interpretation.classList.add('box');
+  
+    keywords.classList.add('box1');
+    interpretation.classList.add('box2');
     
     // talk more about how to show users their card interpretations from the recent cards room
-  */
+  
     anchor.append(container);
 }
 //NEW STUFF END -Franco
