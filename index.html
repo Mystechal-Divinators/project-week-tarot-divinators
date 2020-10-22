@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
     <title>Welcome</title>
+    <link rel="icon" href="../assets/icon/iconball.png" type="image/png">
 </head>
 
 <body>
     <header>
         WELCOME
         <div>
-            <span class="headerSpan">
+
+        <!-- navigation links -->
+ 
+           <span class="headerSpan">
                 <div class="aboutTarotButtonDiv">
                     <a href="./about-tarot/index.html">     
                         <button id="aboutTarotButton">About Tarot</button>
@@ -29,6 +33,7 @@
                     <button id="beginButton">About Us</button>
                 </a>
             </div> 
+
         </span>
         <span class="header3Span">
             <div class="recentCardButtonDiv">
@@ -46,25 +51,30 @@
                     <input type="radio" name="one-or-three" value="1" checked >
                     <!-- img here if desired -->
                     <div class="lables">
-                        <p class="little-card"></p>
+                        <p class="one-card"></p>
                     </div>
-                    one card
+                    <p id="one-card-description">
+                    single-card <br> daily spread
+                    </p>
                 </label>
                 <label>
                     <input type="radio" name="one-or-three" value="3">
                     <!-- img here if desired -->
                     <div class="labels">
-                        <p class="little-card"></p>
-                        <p class="little-card"></p>
-                        <p class="little-card"></p>
+                        <p class="three-card"></p>
                     </div>
-                    three cards
+                    <p id="three-card-description">
+                    three-card <br> past/present/future spread
+                    </p>
                 </label>
             </div>
             <div id="beginButtonDiv">
-                <a href="./reading-room/index.html">
-                    <button id="begin-button">BEGIN</button>
-                </a>
+
+               <a href="./reading-room/index.html">
+                    <button id="beginButton">BEGIN</button>
+               </a>
+
+
             </div>
         </section>
     </main>
