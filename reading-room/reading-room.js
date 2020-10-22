@@ -14,7 +14,7 @@ cardStack();
 
 // dee's notes for setting up transition/animation
 // grab the *second* card because the first and last have special styling/classes
-// const cardBack = document.querySelectorAll('.card-img')[1];
+const cardBack = document.querySelectorAll('.card-img')[1];
 
 function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));

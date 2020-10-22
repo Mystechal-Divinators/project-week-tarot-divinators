@@ -42,7 +42,6 @@ main {
 
 .card-container {
     position: relative;
-    
 }
 
 .color-block {
@@ -86,7 +85,7 @@ main {
 }
 
 footer {
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
     margin: 10px;
