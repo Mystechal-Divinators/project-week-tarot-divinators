@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Hill House;
+        src:url('../assets/font/Hill_House\ 2.otf')
+}
 
 header {
     font-family: Hill House;
@@ -39,7 +43,7 @@ main {
     background-image: url();
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 7%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     
