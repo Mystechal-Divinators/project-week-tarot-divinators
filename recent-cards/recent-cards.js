@@ -7,7 +7,6 @@ const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 const anchor = document.querySelector('section');
 
-
 function renderRecentCard(card) {
     const container = document.createElement('div');
     const oneCard = document.createElement('div');
