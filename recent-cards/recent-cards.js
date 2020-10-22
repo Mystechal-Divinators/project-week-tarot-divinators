@@ -7,6 +7,8 @@ import { timestampMaker } from '../utils/timestamp.js';
 const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 
+
+
 //NEW STUFF START -Franco
 const currentDate = timestampMaker();
 
@@ -35,15 +37,18 @@ function renderRecentCard(card) {
     // interpretation.textContent = card.interpretation;
     // keywords.textContent = card.keyWords;
 
-    // keywords.classList.add('reveal');
-    // console.log(keywords);
-
     oneCard.append(img, title); /* removed interpretation and keywords for now */
     container.append(oneCard, date);
+    img.classList.add('reveal');
+  /* 
+    keywords.classList.add('box');
+    interpretation.classList.add('box');
+    
+    // talk more about how to show users their card interpretations from the recent cards room
+  */
     anchor.append(container);
 }
 //NEW STUFF END -Franco
-
 
 //create variable to hold card array from local storage
 const recentCards = getLocalStorage(CARDS);
@@ -78,11 +83,3 @@ clearButton.addEventListener('click', () => {
   
     window.location.reload();
 });
-
-
-
-
-//    interpretation.classList.add('hide');
-//    keywords.classList.add('cool');
-
-

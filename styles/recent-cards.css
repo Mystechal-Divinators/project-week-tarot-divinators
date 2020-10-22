@@ -42,6 +42,11 @@ button:hover {
     background:#e4a77b;
     color: #ffffff;
 }
+button:hover {
+    box-shadow: 0 0 15px #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+  }
+
 
 button {
     background: #000000;
@@ -70,10 +75,29 @@ button {
     align-items: center;
 }
 
+.card {
+    position: relative;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 120px;
+    text-align: justify;
+/*    text-justify: inter-word;*/
+}
+
 .timestamp {
     color: red;
+/*  check that display: flex works okay here    */
     display: flex;
     margin-bottom: 20px;
+    width: 120px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
 
 .hide {
@@ -83,4 +107,3 @@ button {
 .reveal:hover + .hide {
     visibility: visible;
 }
-
