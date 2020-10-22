@@ -2,9 +2,9 @@ import { renderCard } from '../utils/renderCard.js';
 import { nCards } from '../utils/logic.js';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage-utils.js';
 import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
-import { timestampMaker } from '../utils/timestamp.js';
+// import { timestampMaker } from '../utils/timestamp.js';
 
-const currentDate = timestampMaker();
+// const currentDate = timestampMaker();
 
 function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
@@ -24,7 +24,7 @@ function clickHandler() {
     
     for (let i = 0; i < randomCard.length; i++) {
         const oneCard = randomCard[i];
-        oneCard.timestamp = currentDate;
+        // oneCard.timestamp = currentDate;
         localStorageCards.push(oneCard);
     }
     

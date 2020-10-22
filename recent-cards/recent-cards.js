@@ -8,9 +8,9 @@ const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 
 //NEW STUFF START -Franco
-const currentDate = timestampMaker();
+// const currentDate = timestampMaker();
 
-console.log(currentDate);
+// console.log(currentDate);
 
 const anchor = document.querySelector('section');
 
@@ -22,12 +22,11 @@ function renderRecentCard(card) {
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
 
-
-    const date = document.createElement('div');
-    date.classList.add('timestamp');
-    date.classList.add('hide');
-    date.textContent = currentDate;
-console.log(date);
+    // const date = document.createElement('div');
+    // date.classList.add('timestamp');
+    // date.classList.add('hide');
+    // date.textContent = currentDate;
+    // console.log(date);
 
     container.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
@@ -36,9 +35,9 @@ console.log(date);
     keywords.textContent = card.keyWords;
 
     keywords.classList.add('reveal');
-console.log(keywords);
+    console.log(keywords);
 
-    container.append(img, title, interpretation, keywords, date);
+    container.append(img, title, keywords, interpretation);
     anchor.append(container);
 }
 //NEW STUFF END -Franco
