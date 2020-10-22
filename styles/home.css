@@ -60,12 +60,6 @@ footer {
     float: left;
 } */
 
-
-
-#beginButton {
-    background: rgb(17, 17, 17);
-}
-
 label {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +80,16 @@ input[type=radio]:checked + div > p {
     background-color: #e4a77b;
     /* feel free to change this color */
 }
+
+#beginButton {
+    background-color: rgb(17, 17, 17);
+}
+#beginButton:hover {
+    background:#e4a77b;
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff;
+}
+
 
 .labels {
     display: flex;
