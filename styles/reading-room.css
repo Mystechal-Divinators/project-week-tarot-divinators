@@ -9,8 +9,10 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     color: white;
-    margin-top: 7%;
+    margin-top: 15px;
     background-color: rgb(17, 17, 17);
 }
 
@@ -51,6 +53,13 @@ main {
     margin: 20px;
 }
 
+
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 #refreshButton {
     background-color: rgb(17, 17, 17);
     visibility: hidden;
@@ -68,4 +77,5 @@ footer {
     justify-content: center;
     margin: 10px;
 }
+
 
