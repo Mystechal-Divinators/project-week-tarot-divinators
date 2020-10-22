@@ -77,11 +77,12 @@ main {
 
 .timestamp {
     color: red;
+    /* change font-family */
     display: flex;
     margin-bottom: 20px;
     width: 120px;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
