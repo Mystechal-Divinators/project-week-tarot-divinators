@@ -9,6 +9,18 @@ export function timestampMaker() {
     let month = timestamp.getMonth();
     const date = timestamp.getDate();
     let day = timestamp.getDay();
+    const hour = timestamp.getHours();
+    const minute = timestamp.getMinutes();
+    const seconds = timestamp.getSeconds();
+    console.log(hour);
+    console.log(minute);
+    console.log(seconds);
+
+
+    const hms = `${hour}${minute}${seconds}`;
+    console.log(hms + 'it worked');
+
+
 
     if (day === 0) {
         day = 'Sun';
@@ -52,7 +64,7 @@ export function timestampMaker() {
         month = 'December';
     }
 
-    const displayDate = `This reading occured on ${day}, ${month} ${date}, ${year}.`;
+    const displayDate = `This reading occured on ${day}, ${month} ${date}, ${year}, ${hms}.`;
 
 
     return displayDate;
@@ -90,3 +102,7 @@ console.log(timeStamp);
 const timeStamp2 = Math.floor(Date.now() / 1000);
 console.log(timeStamp2);
 */
+
+
+
+

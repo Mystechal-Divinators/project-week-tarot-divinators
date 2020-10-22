@@ -5,7 +5,11 @@ import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
 import { cardStack } from './card-stack.js';
 import { timestampMaker } from '../utils/timestamp.js';
 
+
 const cardDesc = document.getElementById('card-desc');
+
+const refreshButton = document.querySelector('#refreshButton');
+
 const currentDate = timestampMaker();
 
 cardStack();
@@ -39,10 +43,19 @@ const onClick = (e) => {
     clickHandler();
     deck.removeEventListener('click', onClick);
     e.target.classList.remove('top');
+
     cardDesc.textContent = 'click the card(s) to reveal their interpretations';
+
+    refreshButton.style.visibility = 'visible';
+
 };
 
 const deck = document.querySelector('.card-img.top');
 
 deck.addEventListener('click', onClick);
 
+
+refreshButton.addEventListener('click', () => {
+    console.log('reset button was clicked.');
+    window.location.reload();
+});
