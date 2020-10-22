@@ -7,6 +7,8 @@ import { timestampMaker } from '../utils/timestamp.js';
 const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 
+
+
 //NEW STUFF START -Franco
 const currentDate = timestampMaker();
 
@@ -29,21 +31,23 @@ function renderRecentCard(card) {
     date.textContent = currentDate;
 console.log(date);
 
+
     container.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
     interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
 
-    keywords.classList.add('reveal');
-console.log(keywords);
+    img.classList.add('reveal');
+console.log(img);
+    keywords.classList.add('box');
+    interpretation.classList.add('box');
+console.log(interpretation, keywords);
 
-    container.append(img, title, interpretation, keywords, date);
+    container.append(img, date, title, keywords, interpretation);
     anchor.append(container);
 }
 //NEW STUFF END -Franco
-
-
 
 
 
@@ -82,11 +86,3 @@ clearButton.addEventListener('click', () => {
   
     window.location.reload();
 });
-
-
-
-
-//    interpretation.classList.add('hide');
-//    keywords.classList.add('cool');
-
-

@@ -71,8 +71,38 @@ button {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    position: relative;
+    text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 120px;
+    text-align: justify;
+/*    text-justify: inter-word;*/
+}
+
 .timestamp {
     color: red;
+    width: 120px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
 
 .hide {
