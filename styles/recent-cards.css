@@ -62,9 +62,10 @@ main {
     margin-bottom: 20px;
     width: 200px;
     position: absolute;
-    top: 90%;
-    left: 60%;
+    top: 91%;
+    left: 51%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hide {
