@@ -1,6 +1,6 @@
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
-//import { renderCard } from '../utils/renderCard.js';
+// import { renderCard } from '../utils/renderCard.js';
 import { timestampMaker } from '../utils/timestamp.js';
 
 
@@ -8,7 +8,7 @@ const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 
 //NEW STUFF START -Franco
-// const currentDate = timestampMaker();
+const currentDate = timestampMaker();
 
 // console.log(currentDate);
 
@@ -22,10 +22,10 @@ function renderRecentCard(card) {
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
 
-    // const date = document.createElement('div');
-    // date.classList.add('timestamp');
-    // date.classList.add('hide');
-    // date.textContent = currentDate;
+    const date = document.createElement('div');
+    date.classList.add('timestamp');
+    date.classList.add('hide');
+    date.textContent = currentDate;
     // console.log(date);
 
     container.classList.add('card');
@@ -34,8 +34,8 @@ function renderRecentCard(card) {
     // interpretation.textContent = card.interpretation;
     // keywords.textContent = card.keyWords;
 
-    keywords.classList.add('reveal');
-    console.log(keywords);
+    // keywords.classList.add('reveal');
+    // console.log(keywords);
 
     container.append(img, title, keywords, interpretation);
     anchor.append(container);
@@ -43,13 +43,9 @@ function renderRecentCard(card) {
 //NEW STUFF END -Franco
 
 
-
-
-
-
 //create variable to hold card array from local storage
 const recentCards = getLocalStorage(CARDS);
-console.log(recentCards);
+// console.log(recentCards);
 
 if (recentCards <= [0]) {
     console.log('You have no recent readings');
@@ -61,7 +57,7 @@ if (recentCards <= [0]) {
     while (recentCards.length > 9) {
         recentCards.shift();
     }
-    console.log(recentCards);
+    // console.log(recentCards);
 
 //loop to render cards in recentCards array
     for (let i = 0; i < recentCards.length; i++) {
