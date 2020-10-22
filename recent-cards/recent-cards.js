@@ -7,6 +7,8 @@ const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 const anchor = document.querySelector('section');
 
+
+/*
 function renderRecentCard(card) {
 
     // NOTE TO FRANCO:
@@ -44,6 +46,64 @@ function renderRecentCard(card) {
     
     anchor.append(container);
 }
+*/
+
+
+
+const cardBack = document.querySelectorAll('.card-img')[1];
+
+
+export function renderRecentCard(card, cardBack) {
+    const container = document.createElement('div');
+    const frontContainer = document.createElement('div');
+    // const backContainer = document.createElement('div');
+    const img = document.createElement('img');
+    const title = document.createElement('p');
+
+    container.classList.add('card-container');
+    frontContainer.classList.add('card');
+    img.src = `../assets/major-arcana/${card.id}.png`;
+    title.textContent = card.name;
+    
+    frontContainer.append(img, title);
+    container.append(frontContainer);
+
+    // if (cardBack) {
+    //     backContainer.append(cardBack);
+    //     container.append(backContainer);
+    // }
+
+    // create a transparent div that becomes opaque on click
+    // and contains the interpretation and keywords text
+    const colorBlock = document.createElement('div');
+    const interpretation = document.createElement('div');
+    const keywords = document.createElement('div');
+
+    colorBlock.classList.add('color-block');
+    keywords.classList.add('keywords');
+    interpretation.classList.add('interpretation');
+
+    keywords.textContent = card.keyWords;
+    interpretation.textContent = card.interpretation;
+
+    colorBlock.addEventListener('click', () => {
+        // 0 is falsey, so we can make a conditional block
+        if (Number(colorBlock.style.opacity)) {
+            colorBlock.style.opacity = 0;
+        } else {
+            colorBlock.style.opacity = 1;
+        }
+    });
+    
+    colorBlock.append(keywords, interpretation);
+    container.append(colorBlock);
+
+    anchor.append(container);
+}
+
+
+
+
 
 //create variable to hold card array from local storage
 const recentCards = getLocalStorage(CARDS);
@@ -64,7 +124,7 @@ if (recentCards <= [0]) {
 //loop to render cards in recentCards array
     for (let i = 0; i < recentCards.length; i++) {
         const oneRecentCard = recentCards[i];
-        renderRecentCard(oneRecentCard);
+        renderRecentCard(oneRecentCard, cardBack);
     }
 }
 
