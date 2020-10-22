@@ -98,7 +98,7 @@ button {
 }
 
 .card-img.top:hover {
-    border: 1px peachpuff solid;
+    box-shadow: 0 0 15px #bba3919f;
 }
 
 .card-img {
