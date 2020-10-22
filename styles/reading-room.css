@@ -9,8 +9,10 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     color: white;
-    margin-top: 7%;
+    margin-top: 15px;
     background-color: rgb(17, 17, 17);
 }
 
@@ -49,4 +51,10 @@ main {
 
 .interpretation, .keywords {
     margin: 20px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }

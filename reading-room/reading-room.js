@@ -5,6 +5,7 @@ import { ONE_OR_THREE, CARDS } from '../utils/constants.js';
 import { cardStack } from './card-stack.js';
 import { timestampMaker } from '../utils/timestamp.js';
 
+const cardDesc = document.getElementById('card-desc');
 const currentDate = timestampMaker();
 
 cardStack();
@@ -38,6 +39,7 @@ const onClick = (e) => {
     clickHandler();
     deck.removeEventListener('click', onClick);
     e.target.classList.remove('top');
+    cardDesc.textContent = 'click the card(s) to reveal their interpretations';
 };
 
 const deck = document.querySelector('.card-img.top');
