@@ -46,7 +46,7 @@ button {
     position: relative;
     text-align: center;
     color: white;
-    margin: 5px;
+    margin: 10px;
 }
 
 .card > img {
@@ -75,7 +75,6 @@ button {
 .card > div {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     width: 240px;
 }

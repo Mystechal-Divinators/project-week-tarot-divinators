@@ -1,19 +1,10 @@
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
 // import { renderCard } from '../utils/renderCard.js';
-import { timestampMaker } from '../utils/timestamp.js';
-
+// import { timestampMaker } from '../utils/timestamp.js';
 
 const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
-
-
-
-//NEW STUFF START -Franco
-//const currentDate = timestampMaker();
-
-//console.log("currentDate: ", currentDate);
-
 const anchor = document.querySelector('section');
 
 
@@ -26,7 +17,6 @@ function renderRecentCard(card) {
     const keywords = document.createElement('div');
 
     const currentDate = card.timestamp;
-console.log(currentDate);
 
     const date = document.createElement('div');
     date.classList.add('timestamp');
@@ -41,18 +31,14 @@ console.log(currentDate);
     keywords.textContent = card.keyWords;
 
     img.classList.add('reveal');
-
-    oneCard.append(img, date, title, keywords, interpretation); /* removed interpretation and keywords for now */
-    container.append(oneCard);
-  
     keywords.classList.add('box1');
     interpretation.classList.add('box2');
+
+    oneCard.append(img, date, title, keywords, interpretation);
+    container.append(oneCard);
     
-    // talk more about how to show users their card interpretations from the recent cards room
-  
     anchor.append(container);
 }
-//NEW STUFF END -Franco
 
 //create variable to hold card array from local storage
 const recentCards = getLocalStorage(CARDS);
@@ -77,13 +63,10 @@ if (recentCards <= [0]) {
     }
 }
 
-
-
-    
 //Button to clear local storage. This button includes a console.log that will need to be removed later.
 clearButton.addEventListener('click', () => {
     console.log('Clear button was clicked.');
     localStorage.clear();
-  
+
     window.location.reload();
 });
