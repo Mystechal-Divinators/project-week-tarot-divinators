@@ -87,7 +87,7 @@ export const majorArcana = [
         name: 'The Wheel of Fortune',
         image:'./assets/major-arcana/wheeloffortune.png',
         keyWords: 'Key Words: Jupiter; new beginning, expansion, creativity, big break-through; \n self-realization; unexpected fortune.',
-        interpretation: 'Indications: If no miracles are happenning, something is wrong! You \n stand before the possibility of a great breakthrough! Use the moment!',
+        interpretation: 'Indications: If no miracles are happening, something is wrong! You \n stand before the possibility of a great breakthrough! Use the moment!',
         category: 'major-arcana',
     }, 
     {

@@ -31,19 +31,22 @@ export function renderCard(card, cardBack) {
     const keywords = document.createElement('div');
 
     colorBlock.classList.add('color-block');
+    keywords.classList.add('keywords');
+    interpretation.classList.add('interpretation');
 
-    interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
+    interpretation.textContent = card.interpretation;
 
-    colorBlock.addEventListener('click', e => {
+    colorBlock.addEventListener('click', () => {
         // 0 is falsey, so we can make a conditional block
         if (Number(colorBlock.style.opacity)) {
-            e.target.style.opacity = 0;
+            colorBlock.style.opacity = 0;
         } else {
-            e.target.style.opacity = 1;
+            colorBlock.style.opacity = 1;
         }
     });
-    colorBlock.append(interpretation, keywords);
+    
+    colorBlock.append(keywords, interpretation);
     container.append(colorBlock);
 
     anchor.append(container);
