@@ -18,7 +18,7 @@ a title (name), image, and an interpretation appended in a div below it
 export function renderCard(card, cardBack) {
     const container = document.createElement('div');
     const frontContainer = document.createElement('div');
-    const backContainer = document.createElement('div');
+    // const backContainer = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
 
@@ -35,6 +35,7 @@ export function renderCard(card, cardBack) {
     //     container.append(backContainer);
     // }
 
+    /* 
     //
     // EXPERIMENT: interpretation styling
     const colorBlock = document.createElement('div');
@@ -67,6 +68,7 @@ export function renderCard(card, cardBack) {
     container.append(colorBlock);
     // END EXPERIMENT
     //
+    */
 
 
     anchor.append(container);
