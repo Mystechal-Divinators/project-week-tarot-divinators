@@ -80,6 +80,12 @@ button {
     float: left;
 }
 
+
+
+#beginButton {
+    background: rgb(17, 17, 17);
+}
+
 label {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +110,21 @@ input[type=radio]:checked + div > p {
 
 .labels {
     display: flex;
+}
+
+.one-card {
+    background-image: src('../assets/welcome-cards/1-card-back.png');
+}
+
+.three-card {
+    background-image: src('../assets/welcome-cards/3-card-back.png');
+}
+
+p {
+align-content: center;
+justify-content: center;
+text-align: center;
+color: gray;
 }
 
 .little-card {
