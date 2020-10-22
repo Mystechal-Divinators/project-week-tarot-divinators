@@ -44,12 +44,12 @@ console.log(currentDate);
 
     oneCard.append(img, date, title, keywords, interpretation); /* removed interpretation and keywords for now */
     container.append(oneCard);
-  /* 
-    keywords.classList.add('box');
-    interpretation.classList.add('box');
+  
+    keywords.classList.add('box1');
+    interpretation.classList.add('box2');
     
     // talk more about how to show users their card interpretations from the recent cards room
-  */
+  
     anchor.append(container);
 }
 //NEW STUFF END -Franco
