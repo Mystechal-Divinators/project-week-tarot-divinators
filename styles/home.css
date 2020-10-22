@@ -99,6 +99,8 @@ input[type=radio]:checked + div > p {
 img {
     height: 200px;
     width: auto;
+    border-radius: 12px;
+    margin: 10px;
 }
 
 .one-card {
