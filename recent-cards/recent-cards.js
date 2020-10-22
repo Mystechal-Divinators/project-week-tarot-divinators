@@ -22,8 +22,8 @@ function renderRecentCard(card) {
     const oneCard = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
-    // const interpretation = document.createElement('div');
-    // const keywords = document.createElement('div');
+    const interpretation = document.createElement('div');
+    const keywords = document.createElement('div');
 
     const date = document.createElement('div');
     date.classList.add('timestamp');
@@ -34,18 +34,17 @@ function renderRecentCard(card) {
     container.classList.add('card-container');
     img.src = `../assets/major-arcana/${card.id}.png`;
     title.textContent = card.name;
-    // interpretation.textContent = card.interpretation;
-    // keywords.textContent = card.keyWords;
+    interpretation.textContent = card.interpretation;
+    keywords.textContent = card.keyWords;
 
     oneCard.append(img, title); /* removed interpretation and keywords for now */
     container.append(oneCard, date);
     img.classList.add('reveal');
-  /* 
+
     keywords.classList.add('box');
     interpretation.classList.add('box');
     
     // talk more about how to show users their card interpretations from the recent cards room
-  */
     anchor.append(container);
 }
 //NEW STUFF END -Franco
