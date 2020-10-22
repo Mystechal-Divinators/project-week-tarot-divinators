@@ -54,7 +54,6 @@ main {
     margin: 20px;
 }
 
-
 .description {
     display: flex;
     justify-content: center;
@@ -80,5 +79,3 @@ footer {
     justify-content: center;
     margin: 10px;
 }
-
-

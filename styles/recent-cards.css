@@ -32,7 +32,6 @@ main {
     align-items: center;
 }
 
-
 .card > p {
     position: absolute;
     display: flex;
