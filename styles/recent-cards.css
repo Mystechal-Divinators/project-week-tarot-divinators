@@ -80,7 +80,7 @@ button {
     visibility: hidden;
 }
 
-.card:hover + .hide {
+.reveal:hover + .hide {
     visibility: visible;
 }
 

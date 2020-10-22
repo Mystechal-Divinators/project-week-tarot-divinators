@@ -38,10 +38,14 @@ export function renderCard(card, cardBack) {
     /* 
     //
     // EXPERIMENT: interpretation styling
+    // create a transparent div that becomes opaque on click
+    // and contains the interpretation and keywords text
     const colorBlock = document.createElement('div');
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
 
+
+    // translate these styling tests to a css class
     colorBlock.style.width = '240px';
     colorBlock.style.height = '425px';
     colorBlock.style.backgroundColor = 'red';
@@ -56,14 +60,18 @@ export function renderCard(card, cardBack) {
     interpretation.textContent = card.interpretation;
     keywords.textContent = card.keyWords;
 
+    // will need to align the text better with more testing
+
     colorBlock.addEventListener('click', e => {
-        if (Number(e.target.style.opacity)) {
+        // 0 is falsey
+        // so this sets it up to become transparent (opacity 0) if it's opaque
+        if (Number(colorBlock.style.opacity)) {
             e.target.style.opacity = 0;
         } else {
+            // and this sets it up to become opaque (opacity 1) if it's transparent
             e.target.style.opacity = 1;
         }
     });
-
     colorBlock.append(interpretation, keywords);
     container.append(colorBlock);
     // END EXPERIMENT

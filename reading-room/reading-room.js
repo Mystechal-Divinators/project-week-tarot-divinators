@@ -9,6 +9,7 @@ import { cardStack } from './card-stack.js';
 
 cardStack();
 
+// dee's notes for setting up transition/animation
 // grab the *second* card because the first and last have special styling/classes
 const cardBack = document.querySelectorAll('.card-img')[1];
 

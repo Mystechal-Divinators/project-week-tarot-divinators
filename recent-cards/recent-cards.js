@@ -35,7 +35,7 @@ function renderRecentCard(card) {
     // interpretation.textContent = card.interpretation;
     // keywords.textContent = card.keyWords;
 
-    // img.classList.add('reveal');
+    // keywords.classList.add('reveal');
     // console.log(keywords);
 
     oneCard.append(img, title); /* removed interpretation and keywords for now */
