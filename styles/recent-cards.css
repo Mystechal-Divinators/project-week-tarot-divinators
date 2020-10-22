@@ -32,7 +32,6 @@ main {
     align-items: center;
 }
 
-
 .card > p {
     position: absolute;
     display: flex;
@@ -59,29 +58,22 @@ main {
     width: 350px;
     height: 140px;
     text-align: justify;
-/*    text-justify: inter-word;*/
 }
 
 .box2 {
     width: 350px;
     height: 150px;
     text-align: justify;
-/*    text-justify: inter-word;*/
 }
-
-/*
-.box1, .box2 {
-    border: solid 1px yellow;
-}
-*/
 
 .timestamp {
     color: red;
+    /* change font-family */
     display: flex;
     margin-bottom: 20px;
     width: 120px;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;

@@ -7,8 +7,13 @@ const clearButton = document.querySelector('.clear-button');
 var paragraph = document.getElementById('message');
 const anchor = document.querySelector('section');
 
-
 function renderRecentCard(card) {
+
+    // NOTE TO FRANCO:
+    // if you're following along in renderCard.js and importing those rules,
+    // the only difference might be a classList name --
+    // just ask me if it looks super weird on render
+
     const container = document.createElement('div');
     const oneCard = document.createElement('div');
     const img = document.createElement('img');
@@ -45,7 +50,7 @@ const recentCards = getLocalStorage(CARDS);
 // console.log(recentCards);
 
 if (recentCards <= [0]) {
-    console.log('You have no recent readings');
+    // console.log('You have no recent readings');
     paragraph.textContent = 'You have no recent readings. Please navigate back to home.';
 
 } else { 
@@ -65,7 +70,7 @@ if (recentCards <= [0]) {
 
 //Button to clear local storage. This button includes a console.log that will need to be removed later.
 clearButton.addEventListener('click', () => {
-    console.log('Clear button was clicked.');
+    // console.log('Clear button was clicked.');
     localStorage.clear();
 
     window.location.reload();

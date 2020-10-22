@@ -7,9 +7,7 @@ import { timestampMaker } from '../utils/timestamp.js';
 
 
 const cardDesc = document.getElementById('card-desc');
-
 const refreshButton = document.querySelector('#refreshButton');
-
 const currentDate = timestampMaker();
 
 cardStack();
@@ -26,9 +24,10 @@ function clickHandler() {
         renderCard(card, cardBack.cloneNode());
     });
     
-    const generatedCards = document.getElementsByClassName('card');
 
-    // const tarotSound = new sound('../assets/sound/tarot-sound.mp3');
+    
+    // const generatedCards = document.getElementsByClassName('card');
+
     
     let localStorageCards = getLocalStorage(CARDS) || [];
     
@@ -36,8 +35,7 @@ function clickHandler() {
         const oneCard = randomCard[i];
         oneCard.timestamp = currentDate;
         localStorageCards.push(oneCard);
-    }
-    
+    }   
     setLocalStorage(CARDS, localStorageCards);
 }
 
@@ -50,11 +48,13 @@ const onClick = (e) => {
 
     refreshButton.style.visibility = 'visible';
 
+
     const audio = document.querySelector('audio');
     audio.volume = 0.1;
     audio.play();
     
-    // tarotSound.play();
+    
+
 };
 
 const deck = document.querySelector('.card-img.top');
@@ -63,6 +63,6 @@ deck.addEventListener('click', onClick);
 
 
 refreshButton.addEventListener('click', () => {
-    console.log('reset button was clicked.');
+    // console.log('reset button was clicked.');
     window.location.reload();
 });
