@@ -95,41 +95,18 @@ button {
     overflow: hidden;
 }
 
-.animation-one {
-    animation-duration: 3s;
-    animation-name: cardone;
+.card {
+    transition: 0.5s ease-in-out;
 }
 
-@keyframes cardone {
-    from {
-        margin-left: 90%;
-    }
+.transition-one {
 
-    to {
-        
-    }
 }
 
-.animation-two {
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-name: cardtwo;
+.transition-two {
+
 }
 
-@keyframes cardtwo {
-    from {
-        margin-left: 95%;
-    }
-}
+.transition-three {
 
-.animation-three {
-    animation-duration: 3s;
-    animation-delay: 9s;
-    animation-name: cardthree;
-}
-
-@keyframes cardthree {
-    from {
-        margin-left: 100%;
-    }
 }
