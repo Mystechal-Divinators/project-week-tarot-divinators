@@ -58,21 +58,13 @@ main {
     width: 350px;
     height: 140px;
     text-align: justify;
-/*    text-justify: inter-word;*/
 }
 
 .box2 {
     width: 350px;
     height: 150px;
     text-align: justify;
-/*    text-justify: inter-word;*/
 }
-
-/*
-.box1, .box2 {
-    border: solid 1px yellow;
-}
-*/
 
 .timestamp {
     color: red;

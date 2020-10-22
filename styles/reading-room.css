@@ -29,48 +29,11 @@ main {
     margin-bottom: 40px;
 }
 
-.color-block {
-    box-shadow: 0 0 10px #ffffff6e;
-}
-
 #card-desc {
     font-family: Hill House;
     font-size: 12px;
     margin-top: 15px;
     margin-bottom: 5px;
-}
-
-.card-container {
-    position: relative;
-}
-
-.color-block {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 240px;
-    height: 420px;
-    top: 0;
-    opacity: 0;
-    border-radius: 12px;
-    background-color: #bba3919f;
-    transition: 0.5s ease-in-out;
-    margin-bottom: 40px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.interpretation, .keywords {
-    margin: 20px;
-}
-
-.description {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    color: darkgrey;
-    font-family: 'Catamaran', sans-serif;
 }
 
 #refreshButton {

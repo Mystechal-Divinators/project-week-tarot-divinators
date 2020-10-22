@@ -8,6 +8,12 @@ var paragraph = document.getElementById('message');
 const anchor = document.querySelector('section');
 
 function renderRecentCard(card) {
+
+    // NOTE TO FRANCO:
+    // if you're following along in renderCard.js and importing those rules,
+    // the only difference might be a classList name --
+    // just ask me if it looks super weird on render
+
     const container = document.createElement('div');
     const oneCard = document.createElement('div');
     const img = document.createElement('img');
