@@ -24,7 +24,10 @@ function clickHandler() {
         renderCard(card, cardBack.cloneNode());
     });
     
+
+    
     // const generatedCards = document.getElementsByClassName('card');
+
     
     let localStorageCards = getLocalStorage(CARDS) || [];
     
@@ -44,6 +47,14 @@ const onClick = (e) => {
     cardDesc.textContent = 'NAME TAG HERE click card below to reveal your interpretation';
 
     refreshButton.style.visibility = 'visible';
+
+
+    const audio = document.querySelector('audio');
+    audio.volume = 0.1;
+    audio.play();
+    
+    
+
 };
 
 const deck = document.querySelector('.card-img.top');
