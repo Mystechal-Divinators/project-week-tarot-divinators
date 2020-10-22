@@ -40,7 +40,6 @@ console.log(date);
 
     img.classList.add('reveal');
 console.log(img);
-
     keywords.classList.add('box');
     interpretation.classList.add('box');
 console.log(interpretation, keywords);
