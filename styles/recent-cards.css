@@ -68,7 +68,7 @@ main {
 }
 
 .timestamp {
-    color: red;
+    color: rgb(255, 255, 255);
     /* change font-family */
     display: flex;
     margin-bottom: 20px;
