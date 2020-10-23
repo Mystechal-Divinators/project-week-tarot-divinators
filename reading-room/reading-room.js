@@ -21,14 +21,21 @@ function clickHandler() {
     const randomCard = nCards(spreadSelection);
 
     randomCard.forEach(card => {
-        renderCard(card, cardBack.cloneNode());
+        // renderCard(card, cardBack.cloneNode());
+        renderCard(card);
     });
-    
 
-    
-    // const generatedCards = document.getElementsByClassName('card');
+    const generatedCards = document.getElementsByClassName('card');
 
-    
+    for (let i = 0; i < generatedCards.length; i++) {
+        const card = generatedCards[i];
+        card.style.opacity = 0;
+
+        setTimeout(() => {
+            card.style.opacity = 1;
+        }, 800);
+    }
+
     let localStorageCards = getLocalStorage(CARDS) || [];
     
     for (let i = 0; i < randomCard.length; i++) {
