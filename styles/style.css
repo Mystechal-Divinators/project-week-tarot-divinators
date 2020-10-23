@@ -118,6 +118,20 @@ button {
     position: relative;
 }
 
+.keywords {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.interpretation {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
+    line-height: 20px;
+    font-size: 15px;
+}
+
 .color-block {
     position: absolute;
     display: flex;
