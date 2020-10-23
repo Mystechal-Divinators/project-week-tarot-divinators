@@ -27,8 +27,29 @@ main {
 
 .card {
     opacity: 1;
-    transition: opacity 2s ease-in;
+    animation: opacity-fade 3s linear;
     margin-bottom: 40px;
+}
+
+@keyframes opacity-fade {
+    0% {
+        opacity: 5%;
+    }
+    10% {
+        opacity: 15%;
+    }
+    30% {
+        opacity: 25%;
+    }
+    60% {
+        opacity: 70%;
+    }
+    90% {
+        opacity: 90%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 .description, .greet-user {
