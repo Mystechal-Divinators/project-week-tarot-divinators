@@ -6,21 +6,6 @@ export function renderRecentCard(card, cardBack) {
     const img = document.createElement('img');
     const title = document.createElement('p');
 
-//console.log(container);
-
-    const currentDate = card.timestamp;
-
-    const date = document.createElement('div');
-    date.classList.add('timestamp');
-    date.classList.add('hide');
-    date.textContent = currentDate;
-
-//    container.classList.add('reveal');
-//    frontContainer.classList.add('reveal');
-//    img.classList.add('reveal');
-//    title.classList.add('reveal');
-
-
     container.classList.add('card-container');
     frontContainer.classList.add('card');
     img.src = `../assets/major-arcana/${card.id}.png`;
@@ -39,13 +24,19 @@ export function renderRecentCard(card, cardBack) {
     const colorBlock = document.createElement('div');
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
+    const date = document.createElement('div');
+    const currentDate = card.timestamp;
 
     colorBlock.classList.add('color-block');
+    colorBlock.classList.add('reveal');
     keywords.classList.add('keywords');
     interpretation.classList.add('interpretation');
+    date.classList.add('timestamp');
+    date.classList.add('hide');
 
     keywords.textContent = card.keyWords;
     interpretation.textContent = card.interpretation;
+    date.textContent = currentDate;
 
     colorBlock.addEventListener('click', () => {
         // 0 is falsey, so we can make a conditional block
@@ -56,10 +47,6 @@ export function renderRecentCard(card, cardBack) {
         }
     });
     
-    colorBlock.classList.add('reveal');
-console.log(colorBlock);
-console.log(date);
-
     colorBlock.append(keywords, interpretation);
     container.append(colorBlock, date);
 
