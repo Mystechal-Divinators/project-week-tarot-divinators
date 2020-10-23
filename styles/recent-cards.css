@@ -34,6 +34,7 @@ main {
 }
 
 .timestamp {
+    font-family: 'Catamaran', sans-serif;
     color: rgb(255, 255, 255);
     /* change font-family */
     display: flex;
@@ -55,6 +56,7 @@ main {
 }
 
 .no-cards-message {
+    font-family: 'Catamaran', sans-serif;
     display: flex;
     padding-top: 40px;
     justify-content: center;
