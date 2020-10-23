@@ -1,8 +1,12 @@
-export function renderRecentCard(card, cardBack) {
+/*
+renderRecentCard takes a card object, and generates an HTML card with:
+a title (name), image, and an overlay div containing the card's keywords 
+and indications as well as a timestamp on hover
+*/ 
+export function renderRecentCard(card) {
     const anchor = document.querySelector('section');
     const container = document.createElement('div');
     const frontContainer = document.createElement('div');
-    // const backContainer = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
 
@@ -13,11 +17,6 @@ export function renderRecentCard(card, cardBack) {
     
     frontContainer.append(img, title);
     container.append(frontContainer);
-
-    // if (cardBack) {
-    //     backContainer.append(cardBack);
-    //     container.append(backContainer);
-    // }
 
     // create a transparent div that becomes opaque on click
     // and contains the interpretation and keywords text
@@ -46,7 +45,6 @@ export function renderRecentCard(card, cardBack) {
             colorBlock.style.opacity = 1;
         }
     });
-    
     colorBlock.append(keywords, interpretation);
     container.append(colorBlock, date);
 

@@ -1,3 +1,6 @@
+/*
+timeStampMaker ...
+*/
 export function timestampMaker() {
     const timestamp = new Date();
 

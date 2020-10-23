@@ -9,7 +9,3 @@ this will be /set/ on the home page, equal to the value of the user's one or thr
 we will /get/ it in the reading room to determine how many cards to generate
 */
 export const ONE_OR_THREE = 'ONE_OR_THREE';
-
-// background
-
-// deck options
