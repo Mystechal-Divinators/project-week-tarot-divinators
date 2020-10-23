@@ -15,6 +15,8 @@ const onClick = (e) => {
     cardDesc.textContent = 'click card below to reveal interpretation';
     refreshButton.style.visibility = 'visible';
 
+    refreshButton.scrollIntoView({ behavior: 'smooth', duration: '10s' });
+
     const audio = document.querySelector('#audio-one');
     audio.volume = 0.1;
     audio.play();
