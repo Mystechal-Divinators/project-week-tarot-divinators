@@ -95,7 +95,7 @@ export const majorArcana = [
         name: 'Justice',
         image:'./assets/major-arcana/justice.png',
         keyWords: 'Key Words:  Libra; balance, centering, equilibrium; balancing of opposites; justice.',
-        interpretation: 'Indications: Pay attention wo what situations in your daily life tend to \n throw you off-balance. Discover the conditions under which you find \n harmony again. Carry this quality with you more and more as you move \n through your daily activities.',
+        interpretation: 'Indications: Pay attention to what situations in your daily life tend to \n throw you off-balance. Discover the conditions under which you find \n harmony again. Carry this quality with you more and more as you move \n through your daily activities.',
         category: 'major-arcana',
     }, 
     {
@@ -103,7 +103,7 @@ export const majorArcana = [
         name: 'The Hanged Man',
         image:'./assets/major-arcana/hangedman.png',
         keyWords: 'Key Words: congealed; end of a situation or relationship which is stuck; \n letting go, giving up, surrendering; learning to see a new way; the \n necessity of breaking through old behavior patterns.',
-        interpretation: 'Indications: It is now possible for you ro recognize where you are stuck \n and which areas of your life are congealed rather than flowing. There \n is nothing to do. The mere act of perceiving your daily reality clearly makes \n transformation possible.',
+        interpretation: 'Indications: It is now possible for you to recognize where you are stuck \n and which areas of your life are congealed rather than flowing. There \n is nothing to do. The mere act of perceiving your daily reality clearly makes \n transformation possible.',
         category: 'major-arcana',
     }, 
     {
