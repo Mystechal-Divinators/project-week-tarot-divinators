@@ -12,18 +12,18 @@ const recentCards = getLocalStorage(CARDS);
 if (recentCards <= [0]) {
     paragraph.textContent = 'You have no recent readings. Please navigate back to home.';
 } else { 
-    //loop to cut array down to 9 cards
+//loop to cut array down to 9 cards
     while (recentCards.length > 9) {
         recentCards.shift();
     }
-    //loop to render cards in recentCards array
+//loop to render cards in recentCards array
     for (let i = 0; i < recentCards.length; i++) {
         const oneRecentCard = recentCards[i];
         renderRecentCard(oneRecentCard, cardBack);
     }
 }
 
-//Button to clear local storage. This button includes a console.log that will need to be removed later.
+//button to clear local storage.
 clearButton.addEventListener('click', () => {
     localStorage.clear();
 
