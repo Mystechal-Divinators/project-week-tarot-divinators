@@ -38,15 +38,6 @@ main {
     10% {
         opacity: 10%;
     }
-    30% {
-        opacity: 25%;
-    }
-    60% {
-        opacity: 70%;
-    }
-    90% {
-        opacity: 90%;
-    }
     100% {
         opacity: 100%;
     }
