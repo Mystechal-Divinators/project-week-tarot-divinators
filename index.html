@@ -43,15 +43,21 @@
     </header>
     <main>
         <section class="main-section">
+            <span class="instructions">
+                <p id="firstLine">
+                    Please select a single-card or three-card Major Arcana spread below.
+                </p>
+                <br>
+                <p id="secondLine">
+                    A single card will reveal daily insight, and three cards will reveal <br> insight into your past, present, and future. 
+                </p>
+            </span>
+
             <div id="one-or-three">
                 <label>
                         <input type="radio" name="oneOrThree" value="1" checked >
                         <img src="./assets/card-back/card-back.png" alt="">
-                        <div class="labels">                       
-                            <p id="one-card-description">
-                            daily card
-                            </p>
-                        </div>
+                        
                 </label>
                 <label>
                         <input type="radio" name="oneOrThree" value="3">
@@ -60,11 +66,6 @@
                             <img src="./assets/card-back/card-back.png" alt="">
                             <img src="./assets/card-back/card-back.png" alt="">
                         </div>
-                    <div class="labels">                      
-                        <p id="three-card-description">
-                        past//present//future
-                        </p>
-                    </div>
                 </label>
                 
             </div>

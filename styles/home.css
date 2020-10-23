@@ -50,7 +50,7 @@ label {
 }
 
 label:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 input {
@@ -64,7 +64,7 @@ input[type=radio]:checked + div > p {
 
 #beginButton {
     background-color: rgb(17, 17, 17);
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 #beginButton:hover {
@@ -78,7 +78,7 @@ input[type=radio]:checked + div > p {
 }
 
 img {
-    height: 200px;
+    height: 220px;
     width: auto;
     border-radius: 12px;
     margin: 10px;
@@ -92,13 +92,25 @@ input[type=radio]:checked + div > img {
     box-shadow: 0 0 15px #bba3919f;
 }
 
-p {
+.instructions {
 font-family: Hill House;    
-font-size: 11px;
-align-content: center;
+margin-top: 30px;
+font-size: 15px;
 justify-content: center;
+align-content: center;
+text-align: justify;
+text-justify: inter-word;
 text-align: center;
 color: gray;
+}
+#firstLine {
+font-size: 15px;
+color: #bba391cb;
+}
+
+#secondLine {
+font-size: 11px; 
+color: #bba3919f;
 }
 
 /* .little-card {
