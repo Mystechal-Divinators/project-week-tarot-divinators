@@ -1,13 +1,13 @@
 const anchor = document.querySelector('section');
 
 /*
-renderCard function takes a card object, and generates an HTML card with:
-a title (name), image, and an interpretation appended in a div below it
+renderCard takes a card object, and generates an HTML card with:
+a title (name), image, and an overlay div containing the card's keywords 
+and indications
 */
-export function renderCard(card, cardBack) {
+export function renderCard(card) {
     const container = document.createElement('div');
     const frontContainer = document.createElement('div');
-    // const backContainer = document.createElement('div');
     const img = document.createElement('img');
     const title = document.createElement('p');
 
@@ -19,13 +19,6 @@ export function renderCard(card, cardBack) {
     frontContainer.append(img, title);
     container.append(frontContainer);
 
-    // if (cardBack) {
-    //     backContainer.append(cardBack);
-    //     container.append(backContainer);
-    // }
-
-    // create a transparent div that becomes opaque on click
-    // and contains the interpretation and keywords text
     const colorBlock = document.createElement('div');
     const interpretation = document.createElement('div');
     const keywords = document.createElement('div');
@@ -38,11 +31,9 @@ export function renderCard(card, cardBack) {
     interpretation.textContent = card.interpretation;
 
     colorBlock.addEventListener('click', () => {
-        
         // 0 is falsey, so we can make a conditional block
         if (Number(colorBlock.style.opacity)) {
             colorBlock.style.opacity = 0;
-           
         } else {
             colorBlock.style.opacity = 1;
             const audio = document.querySelector('#audio-two');
@@ -50,7 +41,6 @@ export function renderCard(card, cardBack) {
             audio.play();
         }
     });
-    
     colorBlock.append(keywords, interpretation);
     container.append(colorBlock);
 

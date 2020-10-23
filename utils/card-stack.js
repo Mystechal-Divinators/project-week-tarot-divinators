@@ -1,13 +1,16 @@
 // cardStack clones the deck back img on an offset
 export function cardStack() {
     const cardBack = document.querySelector('.card-back');
+    // when you set the parent's position to relative and the child's position to absolute, 
+    // any additional positioning will be done relative to the parent element
     cardBack.style.position = 'relative';
 
     const img = cardBack.firstElementChild;
     const nImgs = 5;
 
     for (let i = 0; i < nImgs; i++) {
-        const clone = img.cloneNode();
+        // creates a shallow clone
+        const clone = img.cloneNode(); 
         clone.style.position = 'absolute';
 
         // offsets each clone so that it looks like a slightly spread deck
@@ -22,8 +25,6 @@ export function cardStack() {
         }
         cardBack.append(clone);
     }
-    // the anchor img was difficult to align so we don't use it
-    img.style.visibility = 'hidden';
 }
 
 function toPx(size) {
