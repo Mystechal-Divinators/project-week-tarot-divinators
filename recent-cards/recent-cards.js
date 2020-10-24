@@ -3,7 +3,7 @@ import { CARDS } from '../utils/constants.js';
 import { renderRecentCard } from '../utils/renderRecentCard.js'
 
 const clearButton = document.querySelector('.clear-button');
-var paragraph = document.getElementById('message');
+const paragraph = document.getElementById('message');
 const cardBack = document.querySelectorAll('.card-img')[1];
 
 //create variable to hold card array from local storage

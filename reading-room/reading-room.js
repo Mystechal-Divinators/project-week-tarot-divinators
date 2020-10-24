@@ -13,8 +13,8 @@ const onClick = (e) => {
     e.target.classList.remove('top');
 
     cardDesc.textContent = 'click card below to reveal interpretation';
+    
     refreshButton.style.visibility = 'visible';
-
     refreshButton.scrollIntoView({ behavior: 'smooth' });
 
     const audio = document.querySelector('#audio-one');
