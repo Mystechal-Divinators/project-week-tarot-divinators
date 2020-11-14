@@ -1,4 +1,4 @@
-# project-week-tarot-divinatorsProject: My Vampire Boyfriend
+# project-week-tarot-divinators
 Created By:
 Dee Watson, Franco Ortega, Katie Jones, Rhone Lachner
 
