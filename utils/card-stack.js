@@ -12,10 +12,12 @@ export function cardStack() {
 
     for (let i = 0; i < nImgs; i++) {
         // creates a shallow clone
+        // news to me--cool find!
         const clone = img.cloneNode(); 
         clone.style.position = 'absolute';
 
         // offsets each clone so that it looks like a slightly spread deck
+        // sooooo cool!
         const offset = i * 10;
         clone.style.bottom = toPx(offset / 2);
         clone.style.right = toPx(offset);
@@ -29,6 +31,7 @@ export function cardStack() {
     }
 }
 
+// awesome util
 function toPx(size) {
     return `${size}px`;
 }

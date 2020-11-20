@@ -1,6 +1,6 @@
 import { getLocalStorage } from '../utils/localStorage-utils.js';
 import { CARDS } from '../utils/constants.js';
-import { renderRecentCard } from '../utils/renderRecentCard.js'
+import { renderRecentCard } from '../utils/renderRecentCard.js';
 
 const clearButton = document.querySelector('.clear-button');
 const paragraph = document.getElementById('message');

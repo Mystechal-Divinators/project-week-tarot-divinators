@@ -16,11 +16,9 @@ and adds each new card to localStorage in a loop, because randomCard is an array
 */
 export function clickHandler() {
     const spreadSelection = Number(getLocalStorage(ONE_OR_THREE));
-    const randomCard = nCards(spreadSelection);
+    const randomCards = nCards(spreadSelection);
 
-    randomCard.forEach(card => {
-        renderCard(card);
-    });
+    randomCards.forEach(card => renderCard(card));
 
     const generatedCards = document.getElementsByClassName('card');
 
@@ -32,12 +30,12 @@ export function clickHandler() {
             // in order for the transition to trigger, the transition 
             // property must be set and then changed
             card.style.opacity = 1;
-        });
+        }); // setTimeout usually takes a second arguemnt, of milliseconds before exectuion--what is this doing instead?
     }
     let localStorageCards = getLocalStorage(CARDS) || [];
     
-    for (let i = 0; i < randomCard.length; i++) {
-        const oneCard = randomCard[i];
+    for (let i = 0; i < randomCards.length; i++) {
+        const oneCard = randomCards[i];
         oneCard.timestamp = currentDate;
         localStorageCards.push(oneCard);
     }   
