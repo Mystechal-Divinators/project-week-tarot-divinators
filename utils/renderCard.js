@@ -32,6 +32,7 @@ export function renderCard(card) {
 
     colorBlock.addEventListener('click', () => {
         // 0 is falsey, so we can make a conditional block
+        // nice condition!
         if (Number(colorBlock.style.opacity)) {
             colorBlock.style.opacity = 0;
         } else {

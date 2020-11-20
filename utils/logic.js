@@ -12,6 +12,7 @@ function getRandomCard(array) {
 /*
 isRepeat checks if the selected card object is inside a given array
 */
+// great idea! looks like a shallow comparison, though, rather than a deep equality check--did this work?
 function isRepeat(obj, arr) {
     return Boolean(arr.find((item) => item === obj));
 }

@@ -48,5 +48,6 @@ export function renderRecentCard(card) {
     colorBlock.append(keywords, interpretation);
     container.append(colorBlock, date);
 
+    // For the sake of testing and pue functions, I would have liked to see this return the anchor, then do the mutation in the file that calls this function.
     anchor.append(container);
 }
